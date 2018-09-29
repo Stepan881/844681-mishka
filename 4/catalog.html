@@ -12,10 +12,10 @@
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__items"><a href="#">Каталог товаров</a></li>
-          <li class="header__items"><a href="form.html">Вязание на заказ</a></li>
-          <li class="header__items"><a href="#">Поиск по сайту</a></li>
-          <li class="header__items"><a href="#">Корзина: пока пуста</a></li>
+          <li class="header__item"><a href="#">Каталог товаров</a></li>
+          <li class="header__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="header__item"><a href="#">Поиск по сайту</a></li>
+          <li class="header__item"><a href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
       <button class="header__btn" type="button" name="close">X</button>
@@ -25,9 +25,6 @@
         <h2 class="catalog__head">Каталог товаров</h2>
         <div class="catalog__product">
           <article class="catalog__item">
-              <!--T3 6.1. Изображение и название товара являются ссылками на
-              страницу с подробным описанием товара (страницу с подробным описанием
-               товара реализовывать не нужно). -->
             <a class="catalog__link" href="#">
               <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
               <h1 class="catalog__name">Зайчик-попрыгайчик</h1>
@@ -59,9 +56,6 @@
       <section class="production">
         <h2 class="production__header">Процесс производства</h2>
         <div class="production__video">
-          <!-- 6.3. В блоке видеоплеера «Процесс производства» необходимо реализовать
-          контейнер для плеера с видеозаписью (скрипт видеоплеера на страницу
-          добавлять не нужно, достаточно добавить только изображение из макета). -->
           <img src="http://placehold.it/150x50" alt="video">
         </div>
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -84,24 +78,24 @@
       </div>
       <div class="footer__copyright">
         <b class="footer__developed">Разработано:</b>
-        <a class="footer__Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
     <section class="popap">
       <h2 class="popap__header">Добавить в корзину</h2>
       <span class="popap__size">Выберите размер:</span>
         <form class="popap__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="popap__label" for="radio">
-            <input class="popap__link" type="radio" name="Размер" value="S" checked>
-            S
+          <label class="popap__label">
+            <input class="popap__link" type="radio" name="Размер" value="s" checked>
+            s
           </label>
-          <label class="popap__label" for="radio">
-            <input class="popap__link" type="radio" name="Размер" value="L">
-            L
+          <label class="popap__label">
+            <input class="popap__link" type="radio" name="Размер" value="l">
+            l
           </label>
-          <label class="popap__label" for="radio">
-            <input class="popap__link" type="radio" name="Размер" value="M">
-            M
+          <label class="popap__label">
+            <input class="popap__link" type="radio" name="Размер" value="m">
+            m
           </label>
           <button class="popap__btn-upload" type="submit">Добавить</button>
         </form>
