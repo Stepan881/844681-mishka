@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <base href="https://htmlacademy-adaptive.github.io/844681-mishka/4/">
+</head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="http://placehold.it/150x50" width="150" height="50" alt="Мишка">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__items"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="header__items"><a href="form.html">Вязание на заказ</a></li>
+          <li class="header__items"><a href="#">Поиск по сайту</a></li>
+          <li class="header__items"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn" type="button" name="close">X</button>
+    </header>
+    <main>
+    <section class="cart">
+      <h2 class="cart__header">Вязание на заказ</h2>
+      <p class="cart__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="cart__form" action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="cart__list">
+          <legend>Тип</legend>
+          <label class="cart__type" for="radio">
+            <input class="cart__radio" type="radio" name="Тип" value="Аксессуар для интерьера" checked>
+            Аксессуар для интерьера
+          </label>
+          <label class="cart__type" for="radio">
+            <input class="cart__radio" type="radio" name="Тип" value="Детская игрушка">
+            Детская игрушка
+          </label>
+        </fieldset>
+
+        <fieldset class="cart__list">
+          <legend>Цвет</legend>
+          <label class="cart__color" for="checkbox">
+            <input class="cart__checkbox" type="checkbox" name="Цвет" value="Белый" checked>
+            Белый
+          </label>
+          <label class="cart__color" for="checkbox">
+            <input class="cart__checkbox" type="checkbox" name="Цвет" value="Серый" checked>
+            Серый
+          </label>
+          <label class="cart__color" for="checkbox">
+            <input class="cart__checkbox" type="checkbox" name="Цвет" value="«Тиффани»">
+            «Тиффани»
+          </label>
+          <label class="cart__color" for="checkbox">
+            <input class="cart__checkbox" type="checkbox" name="Цвет" value="Черный">
+            Черный
+          </label>
+          <label class="cart__color" for="checkbox">
+            <input class="cart__checkbox" type="checkbox" name="Цвет" value="Розовый">
+            Розовый
+          </label>
+          <label class="cart__color" for="checkbox">
+            <input class="cart__checkbox" type="checkbox" name="Цвет" value="Оранжевый">
+            Оранжевый
+          </label>
+        </fieldset>
+
+        <fieldset class="cart__list">
+          <legend >ФИО</legend>
+          <label class="cart__name" for="Имя">
+            Имя:
+            <input class="cart__text" type="text" name="Имя" placeholder="Введите ваше имя*" required>
+          </label>
+          <label  class="cart__name" for="Фамилия">
+            Фамилия:
+            <input class="cart__text" type="text" name="Фамилия" placeholder="Укажите фамилию*" required>
+          </label>
+          <label  class="cart__name" for="Отчество">
+            Отчество:
+            <input class="cart__text" type="text" name="Отчество" placeholder="Отчество, если желаете">
+          </label>
+        </fieldset>
+
+        <fieldset class="cart__list">
+          <legend>Тел</legend>
+          <label for="Телефон"></label>
+            <input  class="cart__text" type="tel" name="Телефон" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <img class="cart__icon" src="http://placehold.it/20x20" alt="icn">
+        </fieldset>
+        <fieldset class="cart__list">
+          <legend>E-MAIL</legend>
+            <label for="E-MAIL"></label>
+          <input class="cart__text" type="email" name="E-MAIL" placeholder="Ваш Email*" required>
+          <img class="cart__icon" src="http://placehold.it/20x20" alt="icn">
+        </fieldset>
+        <fieldset class="cart__list">
+          <legend>Доп</legend>
+          <textarea class="cart__textarea" rows="3" cols="30" name="Доп"></textarea>
+        </fieldset>
+        <p class="cart__footnote">*Поля обязательны для заполнения</p>
+        <button class="cart__btn" type="submit">Отправить заказ</button>
+      </form>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__social">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link footer__instagram" href="#">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="footer__link footer__facebook" href="#">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="footer__link footer__twitter" href="#">Мы в Твиттер</a>
+        </li>
+      </ul>
+      </div>
+      <div class="footer__copyright">
+        <b class="footer__developed">Разработано:</b>
+        <a class="footer__Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>

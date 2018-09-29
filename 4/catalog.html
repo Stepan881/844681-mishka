@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <base href="https://htmlacademy-adaptive.github.io/844681-mishka/4/">
+</head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="http://placehold.it/150x50" width="150" height="50" alt="Мишка">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__items"><a href="#">Каталог товаров</a></li>
+          <li class="header__items"><a href="form.html">Вязание на заказ</a></li>
+          <li class="header__items"><a href="#">Поиск по сайту</a></li>
+          <li class="header__items"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn" type="button" name="close">X</button>
+    </header>
+    <main>
+      <section class="catalog">
+        <h2 class="catalog__head">Каталог товаров</h2>
+        <div class="catalog__product">
+          <article class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="catalog__info">Рост 30 см, вес 200 г</p>
+            <span class="catalog__price">1 200 руб.</span>
+            <a class="catalog__icon" href="#">icon</a>
+          </article>
+          <article class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__name">Корзинка для белья</h3>
+            </a>
+            <p class="catalog__info">Диаметр 15 см, высота 10 см</p>
+            <span class="catalog__price">690 руб.</span>
+            <a class="catalog__icon" href="#">icon</a>
+          </article>
+          <article class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__name">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="catalog__info">Диаметр 30 см, высота 30 см</p>
+            <span class="catalog__price">1 500 руб.</span>
+            <a class="catalog__icon" href="#">icon</a>
+          </article>
+        </div>
+      </section>
+      <section class="production">
+        <h2 class="production__header">Процесс производства</h2>
+        <div class="production__video">
+        </div>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__btn" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__social">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link footer__instagram" href="#">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="footer__link footer__facebook" href="#">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="footer__link footer__twitter" href="#">Мы в Твиттер</a>
+        </li>
+      </ul>
+      </div>
+      <div class="footer__copyright">
+        <b class="footer__developed">Разработано:</b>
+        <a class="footer__Academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+    <section class="popap">
+      <h2 class="popap__header">Добавить в корзину</h2>
+      <span class="popap__size">Выберите размер:</span>
+      <ul class="popap__list">
+        <li class="popap__item"><a class="popap__link-s" href="#">S</a></li>
+        <li class="popap__item"><a class="popap__link-l" href="#">L</a></li>
+        <li class="popap__item"><a class="popap__link-m" href="#">M</a></li>
+      </ul>
+      <button class="popap__btn-upload" type="button" name="upload">Добавить</button>
+    </section>
+  </body>
+</html>
