@@ -24,9 +24,12 @@
         <h2 class="catalog__head">Каталог товаров</h2>
         <div class="catalog__product">
           <article class="catalog__item">
+              <!--T3 6.1. Изображение и название товара являются ссылками на
+              страницу с подробным описанием товара (страницу с подробным описанием
+               товара реализовывать не нужно). -->
             <a class="catalog__link" href="#">
               <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
-              <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
+              <h1 class="catalog__name">Зайчик-попрыгайчик</h1>
             </a>
             <p class="catalog__info">Рост 30 см, вес 200 г</p>
             <span class="catalog__price">1 200 руб.</span>
@@ -35,7 +38,7 @@
           <article class="catalog__item">
             <a class="catalog__link" href="#">
               <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
-              <h3 class="catalog__name">Корзинка для белья</h3>
+              <h1 class="catalog__name">Корзинка для белья</h1>
             </a>
             <p class="catalog__info">Диаметр 15 см, высота 10 см</p>
             <span class="catalog__price">690 руб.</span>
@@ -44,7 +47,7 @@
           <article class="catalog__item">
             <a class="catalog__link" href="#">
               <img class="catalog__img" src="http://placehold.it/150x50" alt="Зайчик-попрыгайчик">
-              <h3 class="catalog__name">Большая корзинка для игрушек</h3>
+              <h1 class="catalog__name">Большая корзинка для игрушек</h1>
             </a>
             <p class="catalog__info">Диаметр 30 см, высота 30 см</p>
             <span class="catalog__price">1 500 руб.</span>
@@ -55,6 +58,10 @@
       <section class="production">
         <h2 class="production__header">Процесс производства</h2>
         <div class="production__video">
+          <!-- 6.3. В блоке видеоплеера «Процесс производства» необходимо реализовать
+          контейнер для плеера с видеозаписью (скрипт видеоплеера на страницу
+          добавлять не нужно, достаточно добавить только изображение из макета). -->
+          <img src="http://placehold.it/150x50" alt="video">
         </div>
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="production__btn" href="#">Сделать заказ</a>
@@ -64,13 +71,13 @@
       <div class="footer__social">
       <ul class="footer__list">
         <li class="footer__item">
-          <a class="footer__link footer__instagram" href="#">Мы в Инстаграме</a>
+          <a class="footer__instagram" href="#">Мы в Инстаграме</a>
         </li>
         <li class="social__item">
-          <a class="footer__link footer__facebook" href="#">Мы в Фейсбуке</a>
+          <a class="footer__facebook" href="#">Мы в Фейсбуке</a>
         </li>
         <li class="social__item">
-          <a class="footer__link footer__twitter" href="#">Мы в Твиттер</a>
+          <a class="footer__twitter" href="#">Мы в Твиттер</a>
         </li>
       </ul>
       </div>
@@ -82,12 +89,21 @@
     <section class="popap">
       <h2 class="popap__header">Добавить в корзину</h2>
       <span class="popap__size">Выберите размер:</span>
-      <ul class="popap__list">
-        <li class="popap__item"><a class="popap__link-s" href="#">S</a></li>
-        <li class="popap__item"><a class="popap__link-l" href="#">L</a></li>
-        <li class="popap__item"><a class="popap__link-m" href="#">M</a></li>
-      </ul>
-      <button class="popap__btn-upload" type="button" name="upload">Добавить</button>
+        <form class="popap__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="popap__label" for="radio">
+            <input class="popap__link" type="radio" name="Размер" value="S" checked>
+            S
+          </label>
+          <label class="popap__label" for="radio">
+            <input class="popap__link" type="radio" name="Размер" value="L">
+            L
+          </label>
+          <label class="popap__label" for="radio">
+            <input class="popap__link" type="radio" name="Размер" value="M">
+            M
+          </label>
+          <button class="popap__btn-upload" type="submit">Добавить</button>
+        </form>
     </section>
   </body>
 </html>
