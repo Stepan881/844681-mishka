@@ -1,0 +1,45 @@
+/* ------------------------------------------ */
+/* GLOBAL
+/* ------------------------------------------ */
+html {
+  box-sizing: border-box;
+  font-family: "opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden{
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
