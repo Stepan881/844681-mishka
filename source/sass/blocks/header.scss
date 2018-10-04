@@ -1,0 +1,34 @@
+.header {
+  width: 260px;
+  margin: 0 auto;
+  &__logo-image{
+    &:hover{
+      opacity: 0.6;
+    }
+    &:active{
+      opacity: 0.3;
+    }
+  }
+}
+
+.header__nav-list{
+  margin: 0;
+  padding: 0;
+}
+
+.header__item{
+  list-style-type: none;
+}
+
+.header__link{
+  text-decoration: none;
+  color: $color;
+  font-size: 17px;
+  line-height: 24px;
+  &:hover{
+    color: $color-hover;
+  }
+  &:active{
+    color: $color-link;
+  }
+}

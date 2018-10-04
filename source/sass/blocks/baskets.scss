@@ -1,0 +1,32 @@
+.baskets{
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.baskets__wrapper{
+  width: 100%;
+}
+.baskets__header{
+  font-size: 25px;
+  line-height: 30px;
+}
+.baskets__new{
+  font-size: 17px;
+  line-height: 20px;
+  color: $firm-bgcolor;
+  &:nth-child(odd){
+    width: 98px;
+  }
+  &:nth-child(even){
+  }
+}
+.baskets__price{
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
+  line-height: 24px;
+}
+.baskets__btn-order{
+  margin: 0 auto;
+}
