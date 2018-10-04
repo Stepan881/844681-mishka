@@ -1,0 +1,19 @@
+.contacts-btn{
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts-btn__write{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $reviev-color;
+  border: 2px solid $reviev-color;
+  width: 260px;
+  height: 52px;
+  font-weight: 18px;
+  font-style: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

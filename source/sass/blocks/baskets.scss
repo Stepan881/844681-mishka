@@ -8,24 +8,18 @@
   width: 100%;
 }
 .baskets__header{
-    font-family: "opensansbold", Arial, sans-serif;
-    font-size: 25px;
-    line-height: 30px;
-
-
-  span{
-    font-family: "opensansbold", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 20px;
-    color: rgba(99, 209, 187, 1);
+  font-size: 25px;
+  line-height: 30px;
+}
+.baskets__new{
+  font-size: 17px;
+  line-height: 20px;
+  color: $firm-bgcolor;
+  &:nth-child(odd){
+    width: 98px;
   }
-}
-
-.baskets__item:nth-child(odd){
-  width: 98px;
-}
-.baskets__item:nth-child(even){
-
+  &:nth-child(even){
+  }
 }
 .baskets__price{
   text-align: center;
@@ -34,5 +28,5 @@
   line-height: 24px;
 }
 .baskets__btn-order{
-  margin: 0  auto;
+  margin: 0 auto;
 }

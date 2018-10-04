@@ -1,34 +1,35 @@
 .contacts{
   width: 260px;
   margin: 0 auto;
-
 }
 .contacts__list{
   width: 260px;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 .contacts__header{
-  font-family: 'opensansbold';
   font-weight: 18px;
   font-style: 30px;
   margin-bottom: 40px;
 }
 .contacts-list__item{
-  font-family: 'opensans';
   font-weight: 15px;
   font-style: 30px;
-  :link {
-    color: inherit;
+  &:nth-child(odd){
+    width: 74px;
+    margin-bottom: 46px;
+  }
+  &:nth-child(even){
+    width: 186px;
   }
 }
-.contacts-list__item:nth-child(odd){
-  width: 74px;
-  margin-bottom: 46px;
-}
-.contacts-list__item:nth-child(even){
-  width: 186px;
-}
 .contacts-list__mail{
-  border-bottom: 1px solid #62d1ba;
+  text-decoration: none;
+  border-bottom: 1px solid $firm-bgcolor;
+  color: $color;
+  &:visited{
+    color: $color;
+  }
+
 }

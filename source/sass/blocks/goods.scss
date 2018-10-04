@@ -3,12 +3,10 @@
   min-height: 506px;
   margin: 0 auto;
   text-align: center;
-  background: url("../../img/hero-mobile@1x.jpg") 50% -17px no-repeat;
+  background: url("../img/hero-mobile@1x.jpg") 50% -17px no-repeat;
   position: relative;
-
 }
 .goods__head{
-  font-family: "opensansbold", Arial, sans-serif;
   font-size: 27px;
   line-height: 30px;
   padding: 80px 20px;
@@ -17,25 +15,28 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 .goods__item{
   width: 260px;
   height: 103px;
   display: flex;
   justify-content: space-between;
-}
-.goods__item:nth-child(1){
-  background-color: rgba(99, 209, 187, 1);
-}
-.goods__item:nth-child(2){
-  background-color: rgba(86, 195, 178, 1);
+  &:nth-child(1){
+    background-color: $firm-bgcolor;
+  }
+  &:nth-child(2){
+    background-color: $firm-bgcolor-dark;
+  }
 }
 .goods__link{
   position: relative;
   display: flex;
   align-items: center;
   align-self: center;
-  color: #ffffff;
+  color: $color-whete;
+  text-decoration: none;
   font-size: 19px;
   line-height: 24px;
   width: 100px;

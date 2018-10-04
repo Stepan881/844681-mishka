@@ -1,1 +1,31 @@
+.popap{
+  background-color: $bg-popap;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+//  position: fixed;
+//  display: none;
+  z-index: 9999;
+}
 
+.popap__container{
+  text-align: center;
+  width: 260px;
+  height: 336px;
+  margin: 0 auto;
+  display: block;
+}
+
+.popap__header{
+  padding-top: 34px;
+  font-weight: 25px;
+  font-style: 30px;
+  text-transform: uppercase;
+}
+
+.popap__size{
+  font-weight: 15px;
+  font-style: 30px;
+  color: $reviev-color;
+}

@@ -3,20 +3,23 @@
   margin: 0 auto;
 }
 .about__header{
-  font-family: "opensansbold", Arial, sans-serif;
   font-size: 25px;
   line-height: 30px;
 }
 .about__item{
-  font-family: "opensansbold", Arial, sans-serif;
   font-size: 17px;
   line-height: 20px;
 
   position: relative;
 }
+.about__list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .about__ico{
   margin: 20px;
   path{
-    fill: rgba(99, 209, 187, 1);
+    fill: $firm-bgcolor;
   }
 }

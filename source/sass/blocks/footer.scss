@@ -1,0 +1,36 @@
+.footer{
+  background-color: $bg-footer;
+}
+
+.footer__social{
+  width: 260px;
+  margin: 0 auto;
+}
+.footer__list{
+  min-height: 80px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 40px;
+  padding: 0;
+  border-bottom: 1px solid $bg-footer-line;
+}
+
+.footer__container{
+  min-height: 80px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 40px;
+}
+.footer__copyright{
+  width: 260px;
+  margin: 0 auto;
+}
+.footer__academy{
+  path{
+    fill: #63d1bb;
+  }
+}

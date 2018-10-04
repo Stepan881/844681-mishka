@@ -1,21 +1,24 @@
 /* ------------------------------------------ */
 /* GLOBAL
 /* ------------------------------------------ */
+$color: rgba(0, 0, 0, 1);
+$bgcolor: rgba(255, 255, 255, 1);
+$color-whete: rgba(255, 255, 255, 1);
+$firm-bgcolor: rgba(99, 209, 187, 1);
+$firm-bgcolor-dark: rgba(86, 195, 178, 1);
+$reviev-color: rgba(68, 68, 68, 1);
+$bg-footer: rgba(241, 241, 241, 1);
+$bg-footer-line: rgba(229, 229, 229, 1);
+$bg-popap: rgba(255, 255, 255, 0.9);
+$c-border: rgba(236, 236, 236, 1);
+$f-color: rgba(35, 31, 32, 1);
+
 html {
   box-sizing: border-box;
   font-family: "opensans", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #000000;
-
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+  color: $color;
 }
 
 .visually-hidden{
@@ -27,19 +30,4 @@ html {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   border: 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
 }
