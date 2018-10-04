@@ -16,21 +16,47 @@
   padding: 0;
   border-bottom: 1px solid $bg-footer-line;
 }
-
+.footer__link{
+  path{
+    fill: $reviev-color;
+  }
+  &:hover path{
+    fill: $firm-bgcolor;
+  }
+  &:active path{
+    fill: $reviev-color;
+    opacity: 0.3;
+  }
+}
+.footer__copyright{
+  width: 260px;
+  margin: 0 auto;
+}
 .footer__container{
   min-height: 80px;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 40px;
-}
-.footer__copyright{
-  width: 260px;
-  margin: 0 auto;
+
 }
 .footer__academy{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+  color: $color;
   path{
-    fill: #63d1bb;
+    fill: $firm-bgcolor;
+  }
+
+  &:hover{
+    path{
+      fill: $firm-bgcolor-dark;
+    }
+  }
+  &:active{
+    opacity: 0.3;
   }
 }
