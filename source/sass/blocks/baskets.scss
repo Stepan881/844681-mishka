@@ -30,3 +30,67 @@
 .baskets__btn-order{
   margin: 0 auto;
 }
+@media (min-width: $tablet-width) {
+  .baskets{
+  position: relative;
+  width: 668px;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  }
+  .baskets__container-header{
+    display: flex;
+    order: 1;
+  }
+  .baskets__header{
+    width: 500px;
+    margin: 0;
+    padding: 0;
+  }
+  .baskets__new{
+    width: 100px;
+  }
+  .baskets__content{
+    width: 334px;
+    order: 2;
+  }
+  .baskets__wrapper{
+    order: 3;
+    width: 334px;
+  }
+  .baskets__img{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    z-index: -1;
+  }
+  .baskets__price{
+    width: 334px;
+    order: 5;
+  }
+  .baskets__btn-order{
+  margin: 0;
+  width: 100px;
+  order: 4;
+  height: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .baskets{
+  width: 1050px;
+  position: relative;
+  min-height: 780px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+  .baskets__container-header{
+    flex-direction: row-reverse;
+
+  }
+
+}

@@ -9,7 +9,10 @@
 .goods__head{
   font-size: 27px;
   line-height: 30px;
-  padding: 80px 20px;
+  min-height: 284px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .goods__list{
   position: absolute;
@@ -45,4 +48,45 @@
   opacity: 0.3;
   position: absolute;
   right: -130px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .goods{
+    width: 668px;
+    display: flex;
+    justify-content: center;
+    background: url("../img/hero-tablet@1x.jpg") 50% -17px no-repeat;
+  }
+  .goods__head{
+    width: 550px;
+    min-height: 760px;
+  }
+  .goods__list{
+    display: flex;
+    width: 100%;
+  }
+  .goods__item{
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods{
+    width: 1050px;
+    display: flex;
+    justify-content: center;
+    background: url("../img/hero-tablet@1x.jpg") 50% -17px no-repeat;
+  }
+  .goods__head{
+    width: 550px;
+    min-height: 746px;
+  }
+  .goods__list{
+    display: flex;
+    width: 100%;
+  }
+  .goods__item{
+    width: 100%;
+  }
 }

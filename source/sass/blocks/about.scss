@@ -6,17 +6,54 @@
   font-size: 25px;
   line-height: 30px;
 }
-.about__item{
-  font-size: 17px;
-  line-height: 20px;
-
-  position: relative;
-}
 .about__list{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+.about__item{
+  font-size: 17px;
+  line-height: 20px;
+  width: 240px;
+  word-wrap:break-word;
+}
 .about__ico{
   margin: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .about{
+    width: 668px;
+    min-height: 635px;
+  }
+  .about__list{
+    width: 100%;
+    column-count: 2;
+    min-height: 500px;
+  }
+  .about__ico{
+    width: 55px;
+    margin: 0;
+  }
+  .about__item{
+    width: 240px;
+    margin: 20px 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about{
+    width: 1050px;
+    min-height: 665px;
+  }
+  .about__header{
+    margin-left: 173px;
+  }
+  .about__list{
+    width: 700px;
+    margin: 0 auto;
+    min-height: 500px;
+  }
 }

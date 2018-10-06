@@ -44,3 +44,68 @@
   height: 50px;
   border: 2px solid $reviev-color;
 }
+
+
+
+@media (min-width: $tablet-width) {
+  .production{
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .production__container{
+    order: 2;
+  }
+  .production__header{
+    width: 100%;
+    margin-left: 40px;
+  }
+  .production__video{
+    order: 1;
+    background: url("../img/video-tablet@1x.jpg") 50% 0 no-repeat;
+    width: 688px;
+    height: 455px;
+  }
+  .production__text{
+    order: 3;
+  }
+  .production__btn{
+    order: 4;
+  }
+}
+@media (min-width: $desktop-width) {
+  .production{
+    width: 1050px;
+    margin: 0 auto;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // ppppppppppppppppppppp
+  }
+  .production__container{
+    order: 2;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .production__header{
+    margin: 20px 0;
+  }
+  .production__video{
+    order: 1;
+    background: url("../img/video-desktop@1x.jpg") 50% 0 no-repeat;
+    width: 682px;
+    height: 455px;
+  }
+  .production__text{
+    order: 3;
+        width: 300px;
+  }
+  .production__btn{
+    order: 4;
+        width: 300px;
+  }
+}

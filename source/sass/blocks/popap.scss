@@ -15,6 +15,7 @@
   height: 336px;
   margin: 0 auto;
   display: block;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .popap__header{
@@ -28,4 +29,20 @@
   font-weight: 15px;
   font-style: 30px;
   color: $reviev-color;
+}
+@media (min-width: $tablet-width) {
+  .popap__container{
+    width: 566px;
+    height: 336px;
+  }
+
+
+}
+@media (min-width: $desktop-width) {
+  .popap__container{
+
+    width: 566px;
+    height: 336px;
+
+  }
 }

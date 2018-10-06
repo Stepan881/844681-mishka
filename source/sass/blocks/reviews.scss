@@ -6,6 +6,10 @@
   font-size: 25px;
   line-height: 30px;
 }
+.reviews__item{
+  margin: 0;
+  padding: 0;
+}
 .reviews__text{
   font-size: 13px;
   line-height: 30px;
@@ -15,11 +19,21 @@
   line-height: 24px;
   font-style: normal;
 }
+
+.reviews__author-contact{
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  color: $color;
+  width: 260px;
+  &:visited{
+    color: $color;
+  }
+}
 .reviews__btn{
   background-color: inherit;
   border: 1px solid $reviev-color;
-}
-.reviews__btn{
+  width: 128px;
   &--img-prev{
     border: none;
     background-color: inherit;
@@ -29,17 +43,6 @@
     background-color: inherit;
   }
 }
-.reviews__author-contact{
-  font-size: 17px;
-  line-height: 30px;
-  color: $color;
-  &:visited{
-    color: $color;
-  }
-}
-.reviews__btn{
-  width: 128px;
-}
 .reviews__btn-write{
   text-decoration: none;
   display: block;
@@ -47,4 +50,75 @@
   margin: 20px 50px;
   border: 2px solid $reviev-color;
   color: $reviev-color;
+}
+@media (min-width: $tablet-width) {
+  .reviews{
+    width: 668px;
+    min-height: 547px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reviews__header{
+    order: 1;
+    margin: 0;
+    height: auto;
+        height: 25px;
+  }
+  .reviews__author-name{
+      width: 670px;
+  }
+  .reviews__item{
+    order: 3;
+    width: 670px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .reviews__btn{
+    order: 4;
+  }
+  .reviews__btn-write{
+    order: 2;
+    height: 25px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+@media (min-width: $desktop-width) {
+  .reviews{
+  min-height: 547px;
+  width: 1050px;
+  }
+
+  .reviews__header{
+    order: 1;
+    margin: 0;
+    margin-left: 175px;
+    height: auto;
+    height: 25px;
+    width: 350px;
+  }
+  .reviews__item{
+    order: 3;
+    width: 670px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 175px;
+  }
+  .reviews__author-name{
+      width: 670px;
+  }
+
+  .reviews__btn{
+    order: 4;
+  }
+  .reviews__btn-write{
+    order: 2;
+    height: 25px;
+    margin: 0;
+    margin-left: auto;
+  }
+
 }
