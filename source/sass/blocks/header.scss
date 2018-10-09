@@ -1,34 +1,343 @@
 .header {
-  width: 260px;
-  margin: 0 auto;
-  &__logo-image{
-    &:hover{
-      opacity: 0.6;
-    }
-    &:active{
-      opacity: 0.3;
-    }
-  }
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
+.header__container{
 
-.header__nav-list{
-  margin: 0;
-  padding: 0;
 }
+.header__logo{
+   border-top: 1px solid $c-border;
+   border-bottom: 1px solid $c-border;
+   display: block;
+}
+.header__logo-image{
+   min-height: 78px;
+   position: relative;
+   z-index: 2;
+   &:hover{
+     opacity: 0.6;
+   }
+   &:active{
+     opacity: 0.3;
+   }
+}
+.header__btn{
+  display: none;
+}
+ .header__label{
+   position: absolute;
+   background: transparent;
+   border: none;
+   top: 32px;
+   left: 50%;
+   margin-left: 105px;
 
-.header__item{
-  list-style-type: none;
-}
+   display: block;
+   width: 25px;
+   height: 23px;
+   cursor: pointer;
+   color: transparent;
+   font-size: 0;
+   background: url("../img/icon-menu-open.svg") center no-repeat;
+   z-index: 1;
+   transition: 0.3s;
+ }
+ .header__btn:checked + .header__label {
+   background: url("../img/icon-menu-close.svg") center no-repeat;
+   width: 25px;
+   height: 23px;
+   transition: 0.3s;
+ }
+ .header__btn:checked ~ .header__nav {
+   display: block;
 
-.header__link{
-  text-decoration: none;
-  color: $color;
-  font-size: 17px;
-  line-height: 24px;
-  &:hover{
-    color: $color-hover;
-  }
-  &:active{
-    color: $color-link;
-  }
-}
+ }
+ .header__nav{
+   display: none;
+
+ }
+ .header__nav-list{
+   display: block;
+   text-align: left;
+   margin: 0;
+   padding: 0;
+ }
+ .header__item{
+   list-style-type: none;
+   border-bottom: 1px solid $c-border;
+   position: relative;
+   &:nth-child(n+5){
+     display: none;
+   }
+ }
+ .header__icon{
+   position: absolute;
+   left: 50%;
+   margin-left: -130px;
+ }
+ .header__link{
+   display: block;
+   text-decoration: none;
+   width: 216px;
+   color: $color;
+   font-size: 17px;
+   line-height: 24px;
+   font-weight: bolder;
+   margin: 30px auto;
+   padding-left: 46px;
+   &:hover{
+     color: $color-hover;
+   }
+   &:active{
+     color: $color-link;
+
+   }
+
+ }
+
+ @media (min-width: $tablet-width) {
+   .header {
+     width: 100%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     min-height: 88px;
+     border-bottom: 1px solid $c-border;
+     position: relative;
+   }
+   .header__container{
+     width: 87%;
+     padding: 0 6.5%;
+   }
+   .header__logo{
+     position: absolute;
+     text-align: left;
+     border: none;
+   }
+   .header__btn{
+     display: none;
+   }
+   .header__label{
+     display: none;
+   }
+   .header__nav{
+     margin: 0 auto;
+     position: absolute;
+     z-index: 1;
+     top: 0;
+     width: 87%;
+   }
+   .header__nav-list{
+     display: flex;
+     flex-wrap: wrap;
+
+     align-self: center;
+   }
+   .header__icon{
+     position: absolute;
+     left: 32px;
+     margin-left: auto;
+     top: 35px;
+   }
+   .header__link{
+     width: 668px;
+     margin-right: 0;
+     font-size: 15px;
+     line-height: 24px;
+     width: 250px;
+     padding-left: 0;
+   }
+   .header__link-hidden{
+     display: none;
+   }
+   .header__item{
+
+     border: none;
+     &:nth-child(1){
+       order: 3;
+       width: 25%;
+       .header__link{
+         width: auto;
+       }
+     }
+     &:nth-child(2){
+       order: 3;
+       width: 25%;
+       .header__link{
+        width: auto;
+       }
+     }
+     &:nth-child(3){
+       order: 1;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 12%;
+       margin-left: 45%;
+       border-left: 1px solid $c-border;
+       height: 88px;
+         .header__link{
+         }
+
+     }
+     &:nth-child(4){
+       order: 2;
+       display: block;
+       width: 42%;
+       text-align: right;
+       border-left: 1px solid $c-border;
+       .header__link{
+         width: auto;
+       }
+     }
+     &:nth-child(5){
+       order: 3;
+     }
+     &:nth-child(6){
+       order: 3;
+     }
+     &:nth-child(7){
+       order: 3;
+       display: block;
+       width: 38%;
+       margin-left: auto;
+
+       .header__link{
+         font-size: 15px;
+         line-height: 24px;
+         font-weight: normal;
+         text-align: right;
+       }
+     }
+   }
+
+
+ }
+
+
+ @media (min-width: $desktop-width) { //1050
+   .header {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     min-height: 88px;
+     border-bottom: 1px solid $c-border;
+     width: 100%;
+   }
+   .header__container{
+      width: 1150px;
+      padding: 0;
+     margin: 0 auto;
+   }
+   .header__logo{
+     width: 1050px;
+     padding: 0 50px;
+     position: absolute;
+     text-align: center;
+     border: none;
+   }
+   .header__btn{
+     display: none;
+   }
+   .header__label{
+     display: none;
+   }
+   .header__nav{
+     position: absolute;
+     z-index: 1;
+     width: 1050px;
+     padding: 0px 1.7%;
+     margin: 0 auto;
+   }
+   .header__nav-list{
+     width: 1050px;
+      margin: 0 auto;
+   }
+   .header__icon{
+     position: absolute;
+     left: 32px;
+     margin-left: auto;
+     top: 35px;
+   }
+   .header__link{
+     margin-right: 0;
+     font-size: 17px;
+     line-height: 24px;
+     width: 250px;
+     padding-left: 0;
+
+   }
+   .header__item{
+     display: block;
+     border: none;
+
+     &:nth-child(1){
+       order: 0;
+       display: block;
+       width: 184px;
+       border-right: 1px solid $c-border;
+       .header__link{
+         width: 184px;
+       }
+     }
+     &:nth-child(2){
+       order: 0;
+       display: block;
+       width: 184px;
+       margin: 0 35px;
+       .header__link{
+         width: 184px;
+       }
+     }
+     &:nth-child(3){
+       order: 0;
+       display: block;
+       border: none;
+       width: 82px;
+       border-left: 1px solid $c-border;
+       margin-left: 270px;
+       .header__link{
+         width: 82px;
+       }
+     }
+     &:nth-child(4){
+       order: 0;
+       display: block;
+       border: none;
+       border-left: 1px solid $c-border;
+       width: 254px;
+       .header__link{
+         width: 226px;
+       }
+     }
+     &:nth-child(5){
+       order: 0;
+       display: block;
+       width: 220px;
+       .header__link{
+         width: 220px;
+       }
+     }
+     &:nth-child(6){
+       order: 0;
+       display: block;
+       width: 185px;
+       .header__link{
+         width: 185px;
+       }
+     }
+     &:nth-child(7){
+       order: 0;
+       display: block;
+       width: 350px;
+       .header__link{
+         width: 350px;
+
+       }
+     }
+   }
+
+
+ }

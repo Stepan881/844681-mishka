@@ -6,15 +6,17 @@
   left: 0;
 //  position: fixed;
 //  display: none;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .popap__container{
   text-align: center;
-  width: 260px;
+  width: 82%;
+  padding: 0 4.5%;
   height: 336px;
   margin: 0 auto;
   display: block;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .popap__header{
@@ -28,4 +30,20 @@
   font-weight: 15px;
   font-style: 30px;
   color: $reviev-color;
+}
+@media (min-width: $tablet-width) {
+  .popap__container{
+    width: 74%;
+    height: 336px;
+  }
+
+
+}
+@media (min-width: $desktop-width) {
+  .popap__container{
+
+    width: 74%;
+    height: 336px;
+
+  }
 }
