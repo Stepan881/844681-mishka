@@ -1,6 +1,6 @@
 .reviews{
-  width: 260px;
-  margin: 0 auto;
+  width: 82%;
+  padding: 0 9%;
 
 }
 .reviews__header{
@@ -14,10 +14,12 @@
 .reviews__text{
   font-size: 13px;
   line-height: 30px;
+
 }
 .reviews__author-name{
   font-size: 17px;
   line-height: 24px;
+  font-weight: bold;
   font-style: normal;
   word-wrap: break-word;
 }
@@ -47,9 +49,9 @@
   }
 }
 .reviews__btn{
-  background-color: inherit;
+  background-color: transparent;
   border: none;
-  width: 129px;
+  width: 50%;
   height: 50px;
   padding: 0;
     cursor: pointer;
@@ -66,6 +68,7 @@
     height: 26px;
   }
 }
+
 .reviews__btn-write{
   margin-top: 20px;
   padding: 10px 0;
@@ -80,10 +83,11 @@
 @media (min-width: $tablet-width) {
   .reviews{
     position: relative;
-    width: 668px;
+    width: 87%;
     min-height: 547px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 6.5%;
     &:after{
       content: "";
       position: absolute;
@@ -92,21 +96,44 @@
       background: url("../img/review@1x.jpg") center no-repeat;
       z-index: -1;
       margin-left: -33px;
+      left: 0;
     }
   }
+.reviews__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
   .reviews__header{
+    display: block;
     font-size: 43px;
     line-height: 50px;
     order: 1;
     margin: 0;
     height: auto;
     height: 25px;
-    padding-top: 86px;
+    padding-top: 73px;
+    padding-bottom: 30px;
   }
+
+  .reviews__text{
+    display: block;
+    font-size: 17px;
+    line-height: 30px;
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+    width: 87%;
+    word-wrap: break-word;
+
+  }
+
   .reviews__author-name{
+    font-size: 18px;
     display: block;
     width: 670px;
     margin-top: 65px;
+
   }
   .reviews__item{
     display: block;
@@ -115,30 +142,22 @@
     width: 100%;
     margin-top: 0;
   }
-  .reviews__container{
+
+  .reviews__container-btn{
     position: absolute;
-    border: none;
-    width: 173px;
-    bottom: 105px;
+    width: 200px;
+    bottom: 36px;
     right: 0;
+    border: none;
     &:after{
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      background-color: none;
+      display: none;
     }
   }
+
   .reviews__btn{
     order: 4;
   }
-  .reviews__text{
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 17px;
-    line-height: 30px;
-  }
+
   .reviews__btn-write{
     display: block;
     font-size: 17px;
@@ -148,16 +167,21 @@
     height: 25px;
     margin: 0;
     margin-left: auto;
-    margin-top: 86px;
+    margin-top: -50px;
   }
 }
 @media (min-width: $desktop-width) {
   .reviews{
     position: relative;
-    width: 1050px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
     min-height: 547px;
     display: flex;
     flex-wrap: wrap;
+    width: 1050px;
+    margin: 0 auto;
     &:after{
       content: "";
       position: absolute;
@@ -166,8 +190,10 @@
       background: url("../img/review@1x.jpg") center no-repeat;
       z-index: -1;
       margin-left: 0;
+      left: 0;
     }
   }
+
   .reviews__header{
     display: block;
     font-size: 53px;
@@ -182,11 +208,11 @@
   .reviews__author-name{
     display: block;
     width: 670px;
-    margin-top: 65px;
+    margin-top: 35px;
     margin-left: 170px;
   }
   .reviews__author-contact{
-        margin-left: 170px;
+    margin-left: 170px;
   }
   .reviews__item{
     display: block;
@@ -196,11 +222,11 @@
     margin-top: 0;
     top: -20px;
   }
-  .reviews__container{
+  .reviews__container-btn{
     position: absolute;
     border: none;
     width: 173px;
-    bottom: 105px;
+    bottom: 40px;
     right: 0;
     &:after{
       content: "";
@@ -215,11 +241,12 @@
   }
   .reviews__text{
     display: block;
-    margin: 0;
-    padding: 0;
+    margin-top: 70px;
     font-size: 17px;
     line-height: 30px;
     margin-left: 170px;
+    min-height: 50px;
+    width: 875px;
   }
   .reviews__btn-write{
     display: block;
@@ -228,8 +255,7 @@
     width: 171px;
     order: 2;
     height: 25px;
-    margin: 0;
     margin-left: auto;
-    margin-top: 86px;
+
   }
 }

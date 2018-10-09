@@ -1,4 +1,11 @@
 .catalog{
+  overflow: hidden;
+  width: 100%;
+}
+.catalog__wapper{
+  width: 82%;
+  padding: 0 4.5%;
+  margin: 0 auto;
 
 }
 .catalog__logo{
@@ -18,7 +25,7 @@
   line-height: 30px;
 }
 .catalog__product{
-  width: 260px;
+  width: 100%;
   margin: 0 auto;
 }
 .catalog__link{
@@ -57,11 +64,15 @@
   path{
     fill: $c-border;
   }
+  .catalog__img{
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+  }
 }
 @media (min-width: $tablet-width) {
   .catalog__product{
-    width: 668px;
-    margin: 0 auto;
+    margin: 0;
   }
   .catalog__link{
     display: flex;
@@ -73,6 +84,9 @@
   }
   .catalog__item{
     display: flex;
+    justify-content: space-around;
+
+
   }
   .catalog__info{
     margin-bottom: 100px;
