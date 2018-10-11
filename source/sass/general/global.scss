@@ -13,7 +13,11 @@ $color-whete: rgba(255, 255, 255, 1);
 $firm-bgcolor: rgba(99, 209, 187, 1);
 $firm-bgcolor-dark: rgba(86, 195, 178, 1);
 $reviev-color: rgba(68, 68, 68, 1);
+
+
 $bg-footer: rgba(241, 241, 241, 1);
+
+
 $bg-footer-line: rgba(229, 229, 229, 1);
 $bg-popap: rgba(255, 255, 255, 0.9);
 $c-border: rgba(236, 236, 236, 1);
@@ -36,12 +40,14 @@ html {
 }
 
 .visually-hidden{
-  margin: -1px;
-  padding: 0;
   position: absolute;
-  height: 1px; width: 1px;
-  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  border: 0;
+  overflow: hidden;
 }

@@ -5,6 +5,7 @@
   text-align: center;
   background: url("../img/hero-mobile@1x.jpg") 50% -16px no-repeat;
   position: relative;
+  margin-bottom: 6px;
 }
 .goods__head{
   width: 82%;
@@ -17,17 +18,18 @@
 
 }
 .goods__list{
-  padding: 0 9%;
+  width: 100%;
   position: absolute;
-  width: 82%;
   bottom: -15px;
-
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 }
 .goods__item{
-  height: 100px;
+  height: 103px;
+
   display: flex;
-  justify-content: space-between;
-    position: relative;
+  position: relative;
   &:nth-child(1){
     background-color: $firm-bgcolor;
   }
@@ -43,13 +45,16 @@
   text-decoration: none;
   font-size: 19px;
   line-height: 24px;
+  font-weight: bold;
   width: 100px;
   text-align: left;
+  padding-left: 9.5%;
+
 }
 .goods__link-ico{
   opacity: 0.3;
   position: absolute;
-  right: 10%;
+  right: 10.5%;
   top: 20%;
 }
 
@@ -75,11 +80,11 @@
   .goods__head{
     font-size: 43px;
     line-height: 50px;
-    padding-top: 150px;
+    padding-top: 152px;
   }
   .goods__list{
     width: 87%;
-    height: 130px;
+    height: 131px;
     padding: 0 6.5%;
     position: absolute;
     display: flex;
@@ -93,9 +98,11 @@
     font-size: 20px;
     line-height: 30px;
     margin-left: 37px;
+    padding: 0;
+    margin-top: -16px;
   }
   .goods__link-ico{
-    right: 8%;
+    right: 11%;
   }
 }
 
@@ -120,7 +127,7 @@
   .goods__head{
     font-size: 53px;
     line-height: 57px;
-    padding-top: 165px;
+    padding-top: 152px;
   }
   .goods__list{
     position: absolute;
@@ -139,7 +146,7 @@
     margin-left: 37px;
   }
   .goods__link-ico{
-    right: 8%;
-
+    right: 7%;
+    top: 31px;
   }
 }
