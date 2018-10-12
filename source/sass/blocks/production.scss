@@ -1,28 +1,32 @@
 .production{
   overflow: hidden;
-  margin: 50px 0;
+  margin: 30px 0 58px;
 }
 .production__wapper{
-  width: 82%;
-  padding: 0 4.5%;
+  width: 258px;
+
   margin: 0 auto;
-}
-.production__header{
-  font-size: 17px;
-  line-height: 24px;
+  border: 1px solid $c-border;
 }
 .production__container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 30px;
+  padding: 0 34px;
+  margin-top: 23px;
+  margin-bottom: 24px;
   path{
     fill: $firm-bgcolor;
   }
 }
 .production__header{
-  width: 50%;
+  font-size: 17px;
+  line-height: 24px;
+  width: 135px;
+  margin: 0;
 }
+
+
 
 .production__video{
   background: url("../img/video-mobile@1x.jpg") 50% 0 no-repeat;
@@ -35,9 +39,12 @@
 .production__text{
   font-size: 13px;
   line-height: 24px;
-  margin: 0 34px;
+  margin: 26px 34px;
 }
 .production__btn{
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -45,9 +52,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $reviev-color;
-  width: 74%;
-  height: 50px;
+  width: 188px;
+  height: 48px;
   border: 2px solid $reviev-color;
+  margin-bottom: 32px;
 }
 
 
