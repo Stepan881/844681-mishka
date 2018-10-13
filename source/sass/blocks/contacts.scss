@@ -2,7 +2,8 @@
   background: url("../img/bg-zigzag-line.svg") 50% 0 repeat-x;
   background-size: 100%;
   width: 100%;
-  margin-bottom: 38px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .contacts__container{
   width: 82%;
@@ -42,7 +43,6 @@
 
 }
 .contacts-list__mail{
-
   text-decoration: none;
   padding-bottom: 4px;
   border-bottom: 1px solid $firm-bgcolor;
@@ -50,32 +50,45 @@
   &:visited{
     color: $color;
   }
-
 }
-.contacts__map{
+.contacts__back{
+  display: block;
   min-height: 475px;
   width: 100%;
-  background: url("../img/map-mobile@1x.jpg") 50% -17px no-repeat;
-
-  margin-bottom: 22px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  &:after{
+    content: "";
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 67px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -23px;
+    top: 143px;
+  }
 }
-
 .contacts__btn-write{
   margin: 0 auto;
+  margin-bottom: 39px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: $reviev-color;
   border: 2px solid $reviev-color;
-  width: 97.5%;
-
+  width: 80%;
   height: 48px;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+
 
 }
 .contacts__containers{
@@ -134,15 +147,13 @@
       margin: 0;
     }
   }
-  .contacts__map{
-    min-height: 474px;
-    margin: 0 0 38px 0;
-    background: url("../img/map-tablet@1x.jpg") 50% -17px no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
+
+  .contacts__back {
+    margin-bottom: 37px;
   }
   .contacts__btn-write{
-    width: 33.5%;
+    width: 29.5%;
+    margin-bottom: 0;
   }
   .contacts__containers{
     width: 88%;
@@ -154,7 +165,7 @@
     padding-top: 50px;
     min-height: 607px;
     margin: 0 auto;
-
+    width: 1050px;
     position: relative;
   }
   .contacts__container{
@@ -188,7 +199,7 @@
     width: 350px;
     margin-left: 0;
     flex-direction: row;
-    padding-top: 50px;
+    padding-top: 46px;
   }
   .contacts-list__item{
     font-weight: 15px;
@@ -202,26 +213,19 @@
       margin-left: auto;
     }
   }
-  .contacts__map{
+  .contacts__back{
     position: absolute;
     min-height: 460px;
     margin: 0 auto;
-    background: url("../img/map-desktop@1x.jpg") 50% -17px no-repeat;
     width: 524px;
     height: 457px;
     left: 50%;
-    top: 112px;
+    top: 94px;
   }
   .contacts__btn-write{
-    width: 225px;
+    width: 226px;
     padding: 0;
-    margin: 0 5px 0;
+    margin: 82px 175px 0;
 
-  }
-  .contacts__containers{
-    width: 708px;
-    margin: 0 auto;
-    margin-top: 79px;
-    padding: 0;
   }
 }

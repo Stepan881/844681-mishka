@@ -10,11 +10,15 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <div class="header__container-logo">
+
           <a class="header__logo">
-            <img class="header__logo-image" src="img/logo-tablet.svg" width="149" height="72" alt="Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">  <!--width="149" height="72" -->
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">   <!--width="113" height="46" -->
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">  <!-- width="86" height="35" -->
+            </picture>
           </a>
-        </div>
+
         <input class="header__btn" type="checkbox" id="burger" checked>
         <label class="header__label" for="burger">Меню</label>
         <nav class="header__nav">
@@ -46,6 +50,11 @@
     </header>
     <main>
       <section class="goods">
+        <picture class="goods__back">
+          <source media="(min-width: 1150px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
+          <img class="goods__image" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" alt="Милые штуки">
+        </picture>
         <div class="goods__container">
           <h1 class="visually-hidden">Магазин "Мишка"</h1>
           <h2 class="goods__head">Милые штуки ручной<br>работы для дома</h2>
@@ -84,7 +93,12 @@
               <td class="baskets__item">15 см</td>
             </tr>
           </table>
-          <img class="baskets__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <picture class="baskets__back">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="baskets__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
+
           <span class="baskets__price">Цена: 990 руб.</span>
         <!-- На модальное окно -->
           <button class="baskets__btn-order" type="button" name="button">Заказать</button>
@@ -153,6 +167,10 @@
       </section>
       <section class="reviews">
         <div class="reviews__container">
+          <picture class="reviews__back">
+            <source media="(min-width: 768px)" srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x">
+            <img class="reviews__image" src="img/review@1x.jpg" srcset="img/review@2x.jpg" alt="Фон отзывов">
+          </picture>
           <h2 class="reviews__header">Отзывы</h2>
           <blockquote class="reviews__item">
             <p class="reviews__text">
@@ -178,13 +196,13 @@
             <li class="contacts-list__item"><address class="contacts-list__address">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</address></li>
           </ul>
         </div>
-        <div class="contacts__map">
           <h2 class="visually-hidden">Мы на карте</h2>
-        </div>
-        <div class="contacts__containers">
-              <!--     iframe     -->
+          <picture class="contacts__back">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте">
+          </picture>
           <a class="contacts__btn-write" href="#">Напишите нам</a>
-        </div>
       </section>
     </main>
     <footer class="footer">
