@@ -9,26 +9,22 @@ $retina-dppx: 1.5dppx;
 $color: rgba(0, 0, 0, 1);
 $color-hover: rgba(0, 0, 0, 0.6);
 $color-link: rgba(0, 0, 0, 0.3);
-
 $bgcolor: rgba(255, 255, 255, 1);
-$color-whete: rgba(255, 255, 255, 1);
-$firm-bgcolor: rgba(99, 209, 187, 1);
+$color-whete: rgb(255, 255, 255);
+$firm-bgcolor: rgba(98, 209, 187, 1);
 $firm-bgcolor-dark: rgba(86, 195, 178, 1);
 $reviev-color: rgba(68, 68, 68, 1);
-
-
 $bg-footer: rgba(241, 241, 241, 1);
-
-
 $bg-footer-line: rgba(229, 229, 229, 1);
 $bg-popap: rgba(255, 255, 255, 0.9);
 $c-border: rgba(236, 236, 236, 1);
 $f-color: rgba(35, 31, 32, 1);
-
+$interior: rgba(20, 144, 128, 1);
 
 /*
 @media (min-width: $tablet-width) {width: 668px;}
 @media (min-width: $desktop-width) {width: 1150px;}
+transition: all 0.3s ease;
 */
 
 

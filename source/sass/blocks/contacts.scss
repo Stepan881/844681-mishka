@@ -29,6 +29,7 @@
 .contacts-list__item{
   font-size: 15px;
   line-height: 30px;
+  color: $reviev-color;
   &:nth-child(odd){
     width: 29%;
     margin-bottom: 30px;
@@ -46,9 +47,15 @@
   text-decoration: none;
   padding-bottom: 4px;
   border-bottom: 1px solid $firm-bgcolor;
-  color: $color;
-  &:visited{
-    color: $color;
+  color: $reviev-color;
+  transition: all 0.3s ease;
+  &:hover{
+    transition: all 0.3s ease;
+    color: $firm-bgcolor;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    opacity: 0.3;
   }
 }
 .contacts__back{
@@ -88,7 +95,15 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-
+  &:hover{
+    transition: all 0.3s ease;
+    background-color: $reviev-color;
+    color: $color-whete;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    color: rgba($color-whete,.3);
+  }
 
 }
 .contacts__containers{

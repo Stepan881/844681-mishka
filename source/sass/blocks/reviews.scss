@@ -61,7 +61,16 @@
   width: 50%;
   height: 50px;
   padding: 0;
-    cursor: pointer;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    transition: all 0.3s ease;
+    opacity: 0.6;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    opacity: 0.3;
+  }
   &--img-prev{
     border: none;
     background-color: inherit;
@@ -89,6 +98,15 @@
   color: $reviev-color;
   font-size: 18px;
   line-height: 20px;
+  &:hover{
+    transition: all 0.3s ease;
+    background-color: $reviev-color;
+    color: $color-whete;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    color: rgba($color-whete,.3);
+  }
 }
 @media (min-width: $tablet-width) {
   .reviews{
