@@ -1,49 +1,149 @@
-.popap{
-  background-color: $bg-popap;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-//  position: fixed;
-//  display: none;
-  z-index: 99;
-}
 
+.popap{
+
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+}
+.popap__overoverlay{
+  cursor: pointer;
+  position: absolute;
+  z-index: 11;
+  height: 100%;
+  width: 100%;  background-color: $bg-popap;
+}
+.popap__checked{
+  display: none;
+}
 .popap__container{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: $bgcolor;
+  position: absolute;
   text-align: center;
-  width: 82%;
-  padding: 0 4.5%;
+  width: 100%;
   height: 336px;
-  margin: 0 auto;
-  display: block;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 0;
+  top: 50%;
+  margin-top: -168px;
+  z-index: 12;
 }
 
 .popap__header{
-  padding-top: 34px;
-  font-weight: 25px;
-  font-style: 30px;
+  box-sizing: content-box;
+  margin: 0 80px;
+  padding-top: 30px;
+  margin-bottom: 14px;
+  font-size: 25px;
+  line-height: 30px;
   text-transform: uppercase;
 }
-
 .popap__size{
-  font-weight: 15px;
-  font-style: 30px;
+  font-size: 15px;
+  line-height: 30px;
   color: $reviev-color;
 }
-@media (min-width: $tablet-width) {
-  .popap__container{
-    width: 74%;
-    height: 336px;
+.popap__form{
+  box-sizing: border-box;
+  padding: 0 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.popap__label{
+  width: 28%;
+}
+.popap__text{
+  display: block;
+  margin-top: 26px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  width: 100%;
+  height: 32px;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color;
+  padding-top: 16px;
+  cursor: pointer;
+  &:hover{
+    border-color: rgba(68, 68, 68, 0.3);
   }
+  &:active{
+    border-color: $firm-bgcolor;
+  }
+}
+.popap__btn-upload{
+  margin-top: 32px;
+  padding: 16px 0;
+  width: 97%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  border: 2px solid $firm-bgcolor;
+  background-color: $firm-bgcolor;
+  color: $color-whete;
+  font-size: 17px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.popap__link:checked + .popap__text{
+  border-color: $firm-bgcolor;
+}
 
 
+
+@media (min-width: $tablet-width) {
+  .popap{
+    width: 100%;
+  }
+  .popap__container{
+    width: 566px;
+    margin-left: -283px;
+    left: 50%;
+  }
+  .popap__header{
+    font-size: 30px;
+    line-height: 57px;
+  }
+  .popap__size{
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .popap__form{
+    padding: 0 18%;
+  }
+  .popap__btn-upload{
+      margin-top: 29px;
+  }
 }
 @media (min-width: $desktop-width) {
-  .popap__container{
+    .popap__container{
+      width: 566px;
+      height: 336px;
+    }
+    .popap__form{
+      justify-content: space-around;
+    }
+  .popap__text{
+    display: block;
+    margin-top: 21px;
+    width: 100%;
+    height: 32px;
+    padding-top: 16px;
 
-    width: 74%;
-    height: 336px;
-
+  }
+  .popap__label{
+    width: 110px;
+  }
+  .popap__btn-upload{
+    margin-top: 30px;
   }
 }

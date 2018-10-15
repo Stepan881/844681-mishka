@@ -4,6 +4,9 @@
   margin-top: 52px;
   margin-bottom: 44px;
 }
+.reviews__back{
+  display: none;
+}
 .reviews__header{
   font-size: 25px;
   line-height: 30px;
@@ -58,7 +61,16 @@
   width: 50%;
   height: 50px;
   padding: 0;
-    cursor: pointer;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    transition: all 0.3s ease;
+    opacity: 0.6;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    opacity: 0.3;
+  }
   &--img-prev{
     border: none;
     background-color: inherit;
@@ -86,6 +98,15 @@
   color: $reviev-color;
   font-size: 18px;
   line-height: 20px;
+  &:hover{
+    transition: all 0.3s ease;
+    background-color: $reviev-color;
+    color: $color-whete;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    color: rgba($color-whete,.3);
+  }
 }
 @media (min-width: $tablet-width) {
   .reviews{
@@ -96,22 +117,21 @@
     flex-wrap: wrap;
     padding: 0 6%;
     margin-top: 0;
-    &:after{
-      content: "";
-      position: absolute;
-      width: 350px;
-      height: 457px;
-      background: url("../img/review@1x.jpg") center no-repeat;
-      z-index: -1;
-      margin-left: 1px;
-      left: 0;
-    }
   }
-.reviews__container{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+  .reviews__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  .reviews__back{
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 457px;
+    left: -6.9%;
+    z-index: -1;
+  }
   .reviews__header{
     display: block;
     font-size: 43px;
@@ -196,19 +216,16 @@
     width: 1050px;
     margin: 0 auto;
     min-height: 600px;
-    &:after{
-      content: "";
-      position: absolute;
-      width: 350px;
-      height: 457px;
-      background: url("../img/review@1x.jpg") center no-repeat;
-      z-index: -1;
-      margin-left: 0;
-      left: 0;
-      top: 77px;
-    }
   }
-
+  .reviews__back{
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 457px;
+    left: 0;
+    top: 76px;
+    z-index: -1;
+  }
   .reviews__header{
     display: block;
     font-size: 53px;

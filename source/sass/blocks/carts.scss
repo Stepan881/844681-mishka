@@ -102,6 +102,24 @@
     top: 9px;
   }
 }
+.cart__radio:checked:hover + .cart__radio-check,
+.cart__radio:hover + .cart__radio-check,
+.cart__radio:checked:hover,
+.cart__radio:hover{
+  border-color: $firm-bgcolor;
+  transition: all 0.3s ease;
+}
+.cart__radio:checked:active + .cart__radio-check,
+.cart__radio:active + .cart__radio-check,
+.cart__radio:checked:active,
+.cart__radio:active{
+    border-color: rgba(68, 68, 68, 0.3);
+    transition: all 0.3s ease;
+}
+
+
+
+
 // ------------------------------------------
 .cart__list-color{
   width: 100%;
@@ -175,6 +193,21 @@
     top: 5px;
   }
 }
+
+.cart__checkbox:checked:hover + .cart__checkbox-check,
+.cart__checkbox:hover + .cart__checkbox-check,
+.cart__checkbox:checked:hover,
+.cart__checkbox:hover{
+  border-color: $firm-bgcolor;
+  transition: all 0.3s ease;
+}
+.cart__checkbox:checked:active + .cart__checkbox-check,
+.cart__checkbox:active + .cart__checkbox-check,
+.cart__checkbox:checked:active,
+.cart__checkbox:active{
+    border-color: rgba(68, 68, 68, 0.3);
+    transition: all 0.3s ease;
+}
 // ------------------------------------------
 .cart__list-name{
   width: 100%;
@@ -219,12 +252,25 @@
   border-bottom: 2px solid $color;
   padding-bottom: 18px;
   width: 92%;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-right: 8%;
   &:hover{
     border-bottom: 2px solid $firm-bgcolor;
+    transition: all 0.3s ease;
+  }
+  &::placeholder{
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  &:focus{
+    border-color: $firm-bgcolor;
+    transition: all 0.3s ease;
+    &::placeholder{
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
   }
 }
+
 // ------------------------------------------
 .cart__list-tel{
   width: 100%;
@@ -272,13 +318,47 @@
   position: relative;
   &:hover{
     border-bottom: 2px solid $firm-bgcolor;
+    transition: all 0.3s ease;
+  }
+  &::placeholder{
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  &:focus{
+    border-color: $firm-bgcolor;
+    transition: all 0.3s ease;
+    &::placeholder{
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
   }
 }
+.cart__text-tel:hover + .cart__ico-tel{
+  opacity: 1;
+  path{
+    fill: $firm-bgcolor;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+.cart__text-tel:focus + .cart__ico-tel{
+  opacity: 1;
+  transition: all 0.3s ease;
+  path{
+    fill: $firm-bgcolor;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+
+
+
+
 .cart__ico-tel{
   position: absolute;
   right: 10px;
   top: 32px;
-
+  opacity: 0.2;
 }
 // ------------------------------------------
 .cart__list-mail{
@@ -323,13 +403,44 @@
   position: relative;
   &:hover{
     border-bottom: 2px solid $firm-bgcolor;
+    transition: all 0.3s ease;
+  }
+  &::placeholder{
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  &:focus{
+    border-color: $firm-bgcolor;
+    transition: all 0.3s ease;
+    &::placeholder{
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
   }
 }
+.cart__text-mail:hover + .cart__ico-mail{
+  opacity: 1;
+  path{
+    fill: $firm-bgcolor;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+.cart__text-mail:focus + .cart__ico-mail{
+  opacity: 1;
+  transition: all 0.3s ease;
+  path{
+    fill: $firm-bgcolor;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+
 .cart__ico-mail{
   position: absolute;
   right: 4px;
   top: 34px;
-
+  opacity: 0.2;
 }
 // ------------------------------------------
 .cart__list-additionally{
@@ -369,11 +480,24 @@
   color: $reviev-color;
   width: 100%;
   height: 142px;
-
   margin-bottom: 18px;
   padding: 17px;
   font-size: 17px;
   line-height: 16px;
+  &::placeholder{
+    opacity: 0.3;
+    transition: all 0.3s ease;
+  }
+  &:hover{
+    border-color: $firm-bgcolor;
+    transition: all 0.3s ease;
+  }
+  &:focus{
+    &::placeholder{
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  }
 }
 // ------------------------------------------
 .cart__container-btn{
@@ -399,7 +523,15 @@
   line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
-
+  &:hover{
+    transition: all 0.3s ease;
+    background-color: $reviev-color;
+    color: $color-whete;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    color: rgba($color-whete,.3);
+  }
 }
 
 // ------------------------------------------

@@ -69,7 +69,16 @@
   box-sizing: content-box;
   cursor: pointer;
   text-transform: uppercase;
-
+  transition: all 0.3s ease;
+  &:hover{
+    transition: all 0.3s ease;
+    background-color: $reviev-color;
+    color: $color-whete;
+  }
+  &:active{
+    transition: all 0.3s ease;
+    color: rgba($color-whete,.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

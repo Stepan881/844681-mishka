@@ -9,9 +9,13 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <div class="header__container-logo">
+        <div class="header__bg">
           <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="img/logo-desktop.svg" width="149" height="72" alt="Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">  <!--width="149" height="72" -->
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">   <!--width="113" height="46" -->
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">  <!-- width="86" height="35" -->
+            </picture>
           </a>
         </div>
         <input class="header__btn" type="checkbox" id="burger" checked>
