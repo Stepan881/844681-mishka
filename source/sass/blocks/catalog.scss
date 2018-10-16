@@ -99,21 +99,15 @@
   margin-top: -6px;
 }
 .catalog__icon{
-  path{
     fill: $c-border;
-  }
   &:hover{
-    path{
       fill: $firm-bgcolor;
       transition: all 0.3s ease;
-    }
   }
   &:active{
-    path{
       fill: $firm-bgcolor;
       transition: all 0.3s ease;
       opacity: 0.3;
-    }
   }
 
 }

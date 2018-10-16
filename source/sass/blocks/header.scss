@@ -28,13 +28,15 @@
    z-index: 2;
    width: 86px;
    height: 35px;
-   &:hover{
-     opacity: 0.6;
-     transition: all 0.3s ease;
-   }
-   &:active{
-     opacity: 0.3;
-     transition: all 0.3s ease;
+   &--active{
+     &:hover{
+       opacity: 0.6;
+       transition: all 0.3s ease;
+     }
+     &:active{
+       opacity: 0.3;
+       transition: all 0.3s ease;
+     }
    }
 }
 .header__btn{
@@ -86,6 +88,8 @@
    padding: 0;
    overflow: hidden;
  }
+
+
  .header__item{
    list-style-type: none;
    border-bottom: 1px solid $c-border;
@@ -96,44 +100,15 @@
    &:nth-child(1){
      border-top: 1px solid $c-border;
    }
-   &:nth-child(3){
-     .header__link{
-       &:hover{
-         path{
-           fill: $firm-bgcolor;
-           transition: all 0.3s ease;
-         }
-       }
-       &:active{
-         path{
-           fill-opacity: 0.3;
-           transition: all 0.3s ease;
-         }
-       }
-     }
-   }
-   &:nth-child(4){
-     .header__link{
-       &:hover{
-         path{
-           fill: $firm-bgcolor;
-           transition: all 0.3s ease;
-         }
-       }
-       &:active{
-         path{
-           fill-opacity: 0.3;
-           transition: all 0.3s ease;
-         }
-       }
-     }
-   }
  }
  .header__icon{
    position: absolute;
    left: 50%;
    margin-left: -130px;
+   fill: #ececec;
  }
+
+
  .header__link{
    display: block;
    text-decoration: none;
@@ -145,10 +120,18 @@
    margin: 27px auto;
    padding-left: 46px;
    &:hover{
+    .header__icon{
+      fill: $firm-bgcolor;
+      transition: all 0.3s ease;
+    }
      color: $color-hover;
      transition: all 0.3s ease;
    }
    &:active{
+     .header__icon{
+       fill-opacity: 0.3;
+       transition: all 0.3s ease;
+     }
      color: $color-link;
      transition: all 0.3s ease;
 

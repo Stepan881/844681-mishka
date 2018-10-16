@@ -334,26 +334,15 @@
   }
 }
 .cart__text-tel:hover + .cart__ico-tel{
-  opacity: 1;
-  path{
     fill: $firm-bgcolor;
     opacity: 1;
     transition: all 0.3s ease;
-  }
 }
 .cart__text-tel:focus + .cart__ico-tel{
-  opacity: 1;
-  transition: all 0.3s ease;
-  path{
     fill: $firm-bgcolor;
     opacity: 1;
     transition: all 0.3s ease;
-  }
 }
-
-
-
-
 .cart__ico-tel{
   position: absolute;
   right: 10px;
@@ -419,21 +408,15 @@
   }
 }
 .cart__text-mail:hover + .cart__ico-mail{
-  opacity: 1;
-  path{
     fill: $firm-bgcolor;
     opacity: 1;
     transition: all 0.3s ease;
-  }
+
 }
 .cart__text-mail:focus + .cart__ico-mail{
-  opacity: 1;
-  transition: all 0.3s ease;
-  path{
     fill: $firm-bgcolor;
     opacity: 1;
     transition: all 0.3s ease;
-  }
 }
 
 .cart__ico-mail{

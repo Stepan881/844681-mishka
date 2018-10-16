@@ -15,7 +15,6 @@
   width: 100%;
   overflow: hidden;
   margin-top: -18px;
-
 }
 .goods__image{
     display: block;
@@ -80,27 +79,23 @@
   position: absolute;
   right: 10.5%;
   top: 20%;
-  path{
-    fill: $interior;
-    opacity: 0.5;
-  }
+  opacity: 0.5;
+
 }
 .goods__item:hover{
   height: 108px;
   margin-top: -5px;
   transition: all 0.3s ease;
 }
-.goods__item:hover .goods__link-text,
-.goods__item:hover .goods__link,
 .goods__item:hover .goods__link-ico{
-  path{
   opacity: 0.7;
-  }
 }
 .goods__link:active .goods__link-text,
 .goods__link:active .goods__link-ico{
   opacity: 0.3;
 }
+
+
 @media (min-width: $tablet-width) { // 668
   .goods{
     width: 100%;

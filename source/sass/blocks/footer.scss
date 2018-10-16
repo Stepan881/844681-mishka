@@ -33,16 +33,15 @@
   width: 100%;
 }
 
-.footer__link{
-  path{
+.footer__link svg{
     fill: $reviev-color;
     transition: all 0.3s ease;
-    }
-    &:hover path{
+
+    &:hover {
       fill: $firm-bgcolor;
       transition: all 0.3s ease;
     }
-    &:active path{
+    &:active {
       fill: $reviev-color;
       opacity: 0.3;
       transition: all 0.3s ease;
@@ -78,13 +77,11 @@
   }
   &:hover{
     transition: all 0.3s ease;
-    path{
       fill: $firm-bgcolor-dark;
-    }
   }
   transition: all 0.3s ease;
-  &:active{
-    opacity: 0.3;
+    &:active{
+      opacity: 0.3;
   }
 }
 .footer__logo-img{
@@ -97,16 +94,6 @@
     opacity: 0.3;
   }
 }
-
-// transition: all 0.3s ease;
-//  &:hover{
-//    transition: all 0.3s ease;
-//    color: $firm-bgcolor;
-//  }
-//  &:active{
-//    transition: all 0.3s ease;
-//    opacity: 0.3;
-//  }
 
 
 @media (min-width: $tablet-width) {
