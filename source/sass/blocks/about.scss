@@ -1,123 +1,108 @@
-.about{
+.about {
   background: url("../img/bg-zigzag-line.svg") 50% 0 repeat-x;
   background-size: 100%;
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
 }
-.about__container{
+
+.about__container {
   width: 82%;
   padding: 0 9%;
-
 }
-.about__header{
+
+.about__header {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   padding-top: 12px;
 }
-.about__list{
+
+.about__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.about__item{
+
+.about__item {
   position: relative;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   margin-top: 84px;
   width: 100%;
-  &:nth-child(1){
-    .about__ico{
+
+  &:nth-child(1) {
+    .about__ico {
       left: 10px;
       top: -50px;
     }
   }
-  &:nth-child(2){
-    .about__ico{
+
+  &:nth-child(2) {
+    .about__ico {
       left: 1px;
       top: -52px;
     }
   }
-  &:nth-child(3){
-    .about__ico{
+
+  &:nth-child(3) {
+    .about__ico {
       left: 9px;
       top: -48px;
     }
   }
-  &:nth-child(4){
-    .about__ico{
+
+  &:nth-child(4) {
+    .about__ico {
       left: 5px;
       top: -52px;
     }
   }
-  &:nth-child(5){
-    .about__ico{
+
+  &:nth-child(5) {
+    .about__ico {
       left: -5px;
       top: -52px;
     }
   }
-  &:nth-child(6){
-    .about__ico{
+
+  &:nth-child(6) {
+    .about__ico {
       left: 4px;
       top: -55px;
     }
   }
 }
-.about__ico{
+
+.about__ico {
   position: absolute;
   left: 0;
-      top: -1px;
+  top: -1px;
 }
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
-//------------------------------------------
 
 @media (min-width: $tablet-width) {
-  .hid{
-
-  }
-  .about__container{
-
-   background-size: 100%;
+  .about__container {
+    background-size: 100%;
     width: 88%;
     padding: 0 6%;
     margin-bottom: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
-  .about__header{
-    font-size: 25px;
-    line-height: 30px;
+
+  .about__header {
+    font-size: 43px;
+    line-height: 50px;
     font-weight: bold;
     padding-top: 30px;
     width: 100%;
-    font-size: 43px;
-    line-height: 50px;
     margin-top: 36px;
     margin-bottom: 20px;
   }
-  .about__list{
+
+  .about__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -128,52 +113,50 @@
     justify-content: space-between;
     height: 450px;
   }
-  .about__item{
+
+  .about__item {
     display: block;
     position: relative;
     font-size: 17px;
     line-height: 20px;
     font-weight: bold;
     width: 50%;
-    font-size: 20px;
-    line-height: 22px;
     margin-bottom: 13px;
   }
-  .about__ico{
+
+  .about__ico {
     position: absolute;
     left: 0;
     top: -50px;
-
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .about{
-      width: 1050px;
+  .about {
+    width: 1050px;
   }
-  .about__container{
+
+  .about__container {
     width: 715px;
     margin: 52px auto 0;
     padding: 0;
-
   }
-  .about__header{
-    font-size: 43px;
-    line-height: 50px;
+
+  .about__header {
     width: 1050px;
     margin: 0 auto;
     font-size: 53px;
     line-height: 57px;
   }
 
-  .about__list{
+  .about__list {
     width: 700px;
     margin: 20px auto 0;
   }
+
   .about__item {
     font-size: 20px;
     line-height: 22px;
   }
-
 }

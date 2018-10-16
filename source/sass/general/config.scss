@@ -1,4 +1,5 @@
 // FONTS
+/*stylelint-disable*/
 @font-face {
   font-family: 'Open Sans';
   font-weight: normal;
@@ -6,6 +7,7 @@
   src: url('../fonts/opensans.woff2') format('woff2'),
        url('../fonts/opensans.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-weight: bold;

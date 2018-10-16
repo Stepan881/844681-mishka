@@ -1,23 +1,26 @@
-.production{
+.production {
   overflow: hidden;
   margin-top: 9px;
   margin-bottom: 48px;
-
 }
-.production__wapper{
+
+.production__wapper {
   width: 258px;
   margin: 0 auto 10px;
   border: 1px solid $c-border;
 }
-.production__wapper:hover{
-  box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+
+.production__wapper:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.production__wapper:active{
-  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+
+.production__wapper:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.production__container{
+
+.production__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,13 +29,15 @@
   margin-bottom: 24px;
   fill: $firm-bgcolor;
 }
-.production__header{
+
+.production__header {
   font-size: 17px;
   line-height: 24px;
   width: 135px;
   margin: 0;
 }
-.production__video{
+
+.production__video {
   width: 100%;
   height: 150px;
   display: flex;
@@ -41,11 +46,12 @@
   overflow: hidden;
   position: relative;
 }
-.production__img{
-  z-index: -1;
 
+.production__img {
+  z-index: -1;
 }
-.production__play{
+
+.production__play {
   display: block;
   position: absolute;
   left: 50%;
@@ -53,21 +59,25 @@
   top: 37px;
   z-index: 2;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     transform: scale(1.2);
     transition: all 0.3s ease;
   }
-  &:active{
+
+  &:active {
     transition: all 0.3s ease;
     transform: scale(0.8);
   }
 }
-.production__text{
+
+.production__text {
   font-size: 13px;
   line-height: 24px;
   margin: 26px 34px;
 }
-.production__btn{
+
+.production__btn {
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -82,28 +92,27 @@
   height: 48px;
   border: 2px solid $reviev-color;
   margin-bottom: 32px;
-  &:hover{
+
+  &:hover {
     transition: all 0.3s ease;
     background-color: $reviev-color;
     color: $color-whete;
   }
-  &:active{
+
+  &:active {
     transition: all 0.3s ease;
-    color: rgba($color-whete,.3);
+    color: rgba($color-whete, 0.3);
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
-  .production{
+  .production {
     width: 100%;
     margin-top: 0;
     margin-bottom: 53px;
-
   }
-  .production__wapper{
-    margin: 0 auto;
+
+  .production__wapper {
     width: 87%;
     margin: 0 6.5%;
     display: flex;
@@ -111,31 +120,35 @@
     border: 0;
     margin-bottom: 10px;
   }
-  .production__play{
+
+  .production__play {
     top: 188px;
   }
-  .production__container{
+
+  .production__container {
     order: 2;
     padding: 33px 44px 24px;
     margin: 0;
     border-left: 1px solid $c-border;
     border-top: 1px solid $c-border;
     border-right: 1px solid $c-border;
-
   }
-  .production__header{
+
+  .production__header {
     width: 100%;
     margin-left: 34px;
     font-size: 20px;
     line-height: 24px;
   }
+
   .production__video{
     order: 1;
     background: url("../img/video-tablet@1x.jpg") 50% 0 no-repeat;
     width: 100%;
     height: 455px;
   }
-  .production__text{
+
+  .production__text {
     display: block;
     order: 3;
     margin: 0;
@@ -146,25 +159,27 @@
     border-left: 1px solid $c-border;
     border-right: 1px solid $c-border;
   }
-  .production__container-btn{
+
+  .production__container-btn {
     order: 4;
     border-left: 1px solid $c-border;
     border-right: 1px solid $c-border;
     border-bottom: 1px solid $c-border;
-
-
   }
-  .production__btn{
+
+  .production__btn {
     width: 87%;
     margin-bottom: 45px;
   }
 }
+
 @media (min-width: $desktop-width) {
-  .production{
+  .production {
     margin-top: 34px;
     margin-bottom: 95px;
   }
-  .production__wapper{
+
+  .production__wapper {
     width: 1050px;
     padding: 0;
     margin: 0 auto;
@@ -174,7 +189,8 @@
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
-  .production__container{
+
+  .production__container {
     order: 2;
     width: 277px;
     display: flex;
@@ -182,29 +198,32 @@
     align-items: flex-start;
     padding: 42px 11px 9px 76px;
   }
-  .production__header{
+
+  .production__header {
     margin: 20px 0;
     width: 230px;
   }
-  .production__video{
+
+  .production__video {
     order: 1;
     background: url("../img/video-desktop@1x.jpg") 50% 0 no-repeat;
     width: 682px;
     height: 455px;
   }
-  .production__text{
+
+  .production__text {
     order: 3;
     width: 230px;
     display: block;
-    padding: 0;
     padding: 4px 57px 47px 77px;
-
   }
-  .production__container-btn{
+
+  .production__container-btn {
     padding-bottom: 59px;
     width: 364px;
   }
-  .production__btn{
+
+  .production__btn {
     order: 4;
     width: 226px;
     margin: 0;
