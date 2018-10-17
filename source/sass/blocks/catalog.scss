@@ -25,7 +25,7 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: -1px;
+  margin-bottom: -4px;
 }
 
 .catalog__item:hover .catalog__container {
@@ -58,7 +58,6 @@
 .catalog__container {
   border: 1px solid $c-border;
   width: 258px;
-
   margin-bottom: 10px;
 }
 
@@ -108,11 +107,16 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
-  margin-top: -6px;
+  margin-top: -3px;
 }
 
 .catalog__icon {
   fill: $c-border;
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
 
   &:hover {
     fill: $firm-bgcolor;
@@ -138,11 +142,12 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 14px;
-      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat;
-      bottom: 0;
-      left: 0;
+      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat-x;
+      background-size: 80% 34px;
+      overflow: hidden;
+      width: 126%;
+      height: 13%;
+      bottom: -13px;
     }
   }
 
@@ -154,8 +159,8 @@
   }
 
   .catalog__wapper {
-    width: 86%;
-    padding: 0 7%;
+    width: 87%;
+    padding: 0 6.5%;
     padding-top: 70px;
     margin-bottom: 0;
     margin-top: 10px;
@@ -165,7 +170,7 @@
     margin: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 334px;
     border: 1px solid $c-border;
     margin-bottom: 52px;
@@ -200,16 +205,17 @@
 
   .catalog__link {
     display: flex;
+    width: auto;
   }
 
   .catalog__name {
-    width: 278px;
+    width: 236px;
     font-size: 20px;
     line-height: 24px;
     word-wrap: break-word;
     margin: 0;
     margin-top: 25px;
-    margin-left: 7%;
+    margin-left: 8%;
     margin-right: 70px;
     margin-bottom: 6px;
   }
@@ -217,20 +223,26 @@
   .catalog__info {
     font-size: 15px;
     line-height: 30px;
-    margin-left: 7%;
+    margin: 0;
+    margin-left: 8%;
     color: $reviev-color;
+    width: auto;
   }
 
   .catalog__price-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: auto;
     min-height: 30px;
     padding: 0;
     border-top: 1px solid $c-border;
     padding-top: 22px;
     margin-bottom: 22px;
+    width: auto;
   }
 
   .catalog__price {
@@ -247,6 +259,13 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 20px;
+  }
+
+  .catalog__logo {
+    &::after {
+      content: "";
+      bottom: -18px;
+    }
   }
 
   .catalog__wapper {
@@ -300,5 +319,6 @@
 
   .catalog__price-container {
     margin-top: auto;
+    margin-left: 7%;
   }
 }

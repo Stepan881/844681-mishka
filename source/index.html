@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
   </head>
   <body>
     <header class="header">
@@ -26,7 +27,7 @@
             <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
             <li class="header__item">
               <a class="header__link" href="#">
-                <svg class="header__icon header__icon--search" width="18" height="18">
+                <svg class="header__icon header__icon--search">
                   <use xlink:href="img/icon.svg#search"></use>
                 </svg>
                 <span class="header__link-hidden">Поиск по сайту</span>
@@ -34,7 +35,7 @@
             </li>
             <li class="header__item">
               <a class="header__link" href="#">
-                <svg class="header__icon header__icon--cart" width="22" height="22">
+                <svg class="header__icon header__icon--cart">
                   <use xlink:href="img/icon.svg#cart"></use>
                 </svg>
                 Корзина: пока пуста
@@ -64,7 +65,7 @@
             <li class="goods__item">
               <a class="goods__link" href="#">
                 <span class="goods__link-text">Предметы интерьера</span>
-                <svg class="goods__link-ico" width="40" height="62">
+                <svg class="goods__link-ico goods__link-ico--interior">
                   <use xlink:href="img/icon-interior.svg#svg4488"></use>
                 </svg>
               </a>
@@ -72,8 +73,8 @@
             <li class="goods__item">
               <a class="goods__link" href="#">
                 <span class="goods__link-text">Детские игрушки</span>
-                <svg class="goods__link-ico" width="60" height="60">
-                  <use xlink:href="img/icon-toy.svg#layer"></use>
+                <svg class="goods__link-ico goods__link-ico--toy">
+                  <use xlink:href="img/icon-toy.svg#Layer_1"></use>
                 </svg>
               </a>
             </li>
@@ -120,37 +121,37 @@
           <h2 class="about__header">Коротко о нас:</h2>
           <ul class="about__list">
             <li class="about__item">
-              <svg class="about__ico" width="32" height="38">
+              <svg class="about__ico">
                 <use xlink:href="img/icon.svg#ico1"></use>
               </svg>
               Экологически<br class="hid"> чистые материалы
             </li>
             <li class="about__item">
-              <svg class="about__ico" width="46.575px" height="27.332px">
+              <svg class="about__ico">
                 <use xlink:href="img/icon.svg#ico2"></use>
               </svg>
               Скандинавский стиль<br class="hid"> по российской цене
             </li>
             <li class="about__item">
-              <svg class="about__ico" width="33.05px" height="27.857px">
+              <svg class="about__ico">
                 <use xlink:href="img/icon.svg#ico3"></use>
               </svg>
               Увеличивает лайки<br class="hid"> на фотографиях
             </li>
             <li class="about__item">
-                <svg class="about__ico" width="34.373px" height="34.373px">
+                <svg class="about__ico">
                   <use xlink:href="img/icon.svg#ico4"></use>
                 </svg>
               Связано вручную с<br class="hid"> любовью и умилением
             </li>
             <li class="about__item">
-              <svg class="about__ico" width="54.156px" height="23.183px">
+              <svg class="about__ico">
                 <use xlink:href="img/icon.svg#ico5"></use>
               </svg>
               Поддержка отечественного производителя
             </li>
             <li class="about__item">
-              <svg class="about__ico"width="32.666px" height="32.486px">
+              <svg class="about__ico">
                 <use xlink:href="img/icon.svg#ico6"></use>
               </svg>
               Поставляется в<br class="hid"> подарочной упаковке
@@ -191,21 +192,25 @@
           </ul>
         </div>
           <h2 class="visually-hidden">Мы на карте</h2>
-          <picture class="contacts__back">
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте">
-          </picture>
+          <div class="contacts__map">
+            <picture class="contacts__back">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте">
+            </picture>
+            <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2279548783831!2d30.32331058233053!3d59.93867743579168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1539735217567" allowfullscreen>
+            </iframe>
+          </div>
           <a class="contacts__btn-write" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__containers">
         <a class="footer__logo">
-          <svg class="footer__logo-img" width="101.615px" height="34.056px">
+          <svg class="footer__logo-img">
             <use xlink:href="img/icon.svg#logotip"></use>
           </svg>
         </a>
@@ -213,21 +218,21 @@
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link footer__link--instagram" href="#">
-                <svg width="21.769px" height="21.334px">
+                <svg>
                   <use xlink:href="img/icon.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link footer__link--facebook" href="#">
-                <svg width="14.962px" height="27.718px">
+                <svg>
                   <use xlink:href="img/icon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link footer__link--twitter" href="#">
-                <svg width="23.494px" height="20.168px">
+                <svg>
                   <use xlink:href="img/icon.svg#twitter"></use>
                 </svg>
               </a>
@@ -238,7 +243,7 @@
           <div class="footer__container">
             <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="footer__developed">Разработано</b>
-              <svg width="26.943px" height="34.09px">
+              <svg>
                 <use xlink:href="img/icon.svg#logo2"></use>
               </svg>
             </a>
@@ -268,6 +273,8 @@
         </form>
       </div>
     </section>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/picturefill.js"></script>
     <script src="js/popup.js"></script>
   </body>

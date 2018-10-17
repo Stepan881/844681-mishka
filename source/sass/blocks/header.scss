@@ -113,6 +113,16 @@
   left: 50%;
   margin-left: -130px;
   fill: #ececec;
+
+  &--search {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--cart {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .header__link {
@@ -179,7 +189,7 @@
     left: auto;
     margin-left: 0;
 
-    img{
+    img {
       width: 113px;
       height: 46px;
     }
@@ -217,9 +227,17 @@
 
   .header__icon {
     position: absolute;
-    left: 32px;
     margin-left: auto;
-    top: 35px;
+
+    &--search {
+      left: 38px;
+      top: 35px;
+    }
+
+    &--cart {
+      left: 25px;
+      top: 32px;
+    }
   }
 
   .header__link {

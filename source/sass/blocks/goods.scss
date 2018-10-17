@@ -6,11 +6,12 @@
   position: relative;
   margin-bottom: 7px;
   overflow: hidden;
+  background-color: $bg-goods;
+  z-index: 0;
 }
 
 .goods__back {
   position: absolute;
-  z-index: -1;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -31,6 +32,8 @@
   margin: 0 auto;
   padding-top: 70px;
   align-items: center;
+  position: absolute;
+  z-index: 1;
 }
 
 .goods__list {
@@ -84,9 +87,21 @@
 .goods__link-ico {
   position: absolute;
   right: 10.5%;
-  top: 20%;
+  top: 24%;
   opacity: 0.5;
+  fill: rgba(20, 144, 128, 0.5);
+
+  &--interior {
+    width: 40px;
+    height: 62px;
+  }
+
+  &--toy {
+    width: 60px;
+    height: 60px;
+  }
 }
+
 
 .goods__item:hover {
   height: 108px;
@@ -118,8 +133,9 @@
       position: absolute;
       display: block;
       width: 100%;
-      height: 24px;
-      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat;
+      height: 28px;
+      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat-x;
+      background-size: 100% 32px;
       bottom: 0;
     }
   }
@@ -127,7 +143,6 @@
   .goods__back {
     margin: 0 auto;
     position: absolute;
-    z-index: -1;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -185,7 +200,7 @@
   }
 }
 
-@media (min-width: $desktop-width) { //1150
+@media (min-width: $desktop-width) {
   .goods {
     min-height: 756px;
     margin: 0 auto;
@@ -197,8 +212,9 @@
       position: absolute;
       display: block;
       width: 100%;
-      height: 24px;
+      height: 30px;
       background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat;
+      background-size: 100% 38px;
       bottom: 0;
     }
   }
@@ -219,13 +235,24 @@
 
   .goods__item {
     width: 525px;
+    height: 123px;
     bottom: 0;
+
+    &:hover {
+      height: 128px;
+      margin-top: -5px;
+      transition: all 0.3s ease;
+    }
   }
 
   .goods__link {
     font-size: 20px;
     line-height: 30px;
     margin-left: 37px;
+  }
+
+  .goods__link-text {
+    margin-top: 10px;
   }
 
   .goods__link-ico {
