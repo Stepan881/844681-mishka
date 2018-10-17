@@ -6,23 +6,25 @@
   position: relative;
   margin-bottom: 7px;
   overflow: hidden;
+  background-color: $bg-goods;
+  z-index: 0;
 }
-.goods__back{
+
+.goods__back {
   position: absolute;
-  z-index: -1;
   display: flex;
   justify-content: center;
   width: 100%;
   overflow: hidden;
   margin-top: -18px;
-
-}
-.goods__image{
-    display: block;
-    height: 373px;
 }
 
-.goods__head{
+.goods__image {
+  display: block;
+  height: 373px;
+}
+
+.goods__head {
   width: 82%;
   padding: 74px 9% 0;
   font-size: 27px;
@@ -30,8 +32,11 @@
   margin: 0 auto;
   padding-top: 70px;
   align-items: center;
+  position: absolute;
+  z-index: 1;
 }
-.goods__list{
+
+.goods__list {
   width: 100%;
   position: absolute;
   bottom: -15px;
@@ -39,20 +44,23 @@
   margin-bottom: 15px;
   padding: 0;
 }
-.goods__item{
+
+.goods__item {
   height: 103px;
   display: flex;
   position: relative;
-    transition: all 0.3s ease;
-  &:nth-child(1){
-    background-color: $firm-bgcolor;
+  transition: all 0.3s ease;
 
+  &:nth-child(1) {
+    background-color: $firm-bgcolor;
   }
-  &:nth-child(2){
+
+  &:nth-child(2) {
     background-color: $firm-bgcolor-dark;
   }
 }
-.goods__link{
+
+.goods__link {
   color: $color-whete;
   text-decoration: none;
   width: 100%;
@@ -62,160 +70,192 @@
   align-self: center;
 }
 
-  .goods__link-text{
-    display: flex;
-    align-items: center;
-    align-self: center;
-    color: $color-whete;
-    text-decoration: none;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: bold;
-    width: 100px;
-    text-align: left;
-    padding-left: 9.5%;
-  }
+.goods__link-text {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  color: $color-whete;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  width: 100px;
+  text-align: left;
+  padding-left: 9.5%;
+}
 
-.goods__link-ico{
+.goods__link-ico {
   position: absolute;
   right: 10.5%;
-  top: 20%;
-  path{
-    fill: $interior;
-    opacity: 0.5;
+  top: 24%;
+  opacity: 0.5;
+  fill: rgba(20, 144, 128, 0.5);
+
+  &--interior {
+    width: 40px;
+    height: 62px;
+  }
+
+  &--toy {
+    width: 60px;
+    height: 60px;
   }
 }
-.goods__item:hover{
+
+
+.goods__item:hover {
   height: 108px;
   margin-top: -5px;
   transition: all 0.3s ease;
 }
-.goods__item:hover .goods__link-text,
-.goods__item:hover .goods__link,
-.goods__item:hover .goods__link-ico{
-  path{
+
+.goods__item:hover .goods__link-ico {
   opacity: 0.7;
-  }
 }
+
 .goods__link:active .goods__link-text,
-.goods__link:active .goods__link-ico{
+.goods__link:active .goods__link-ico {
   opacity: 0.3;
 }
-@media (min-width: $tablet-width) { // 668
-  .goods{
+
+@media (min-width: $tablet-width) {
+  .goods {
     width: 100%;
     min-height: 756px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-
     margin-bottom: 0;
     overflow: hidden;
-//    background: url("../img/hero-desktop@1x.jpg") 50% 0 no-repeat;
-    &:after{
+
+    &::after {
       content: "";
       position: absolute;
       display: block;
       width: 100%;
-      height: 24px;
-      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat;
+      height: 28px;
+      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat-x;
+      background-size: 100% 32px;
       bottom: 0;
     }
   }
-  .goods__back{
+
+  .goods__back {
     margin: 0 auto;
     position: absolute;
-    z-index: -1;
     display: flex;
     justify-content: center;
     width: 100%;
     overflow: hidden;
     margin-top: 0;
   }
-  .goods__image{
-      display: block;
-      height: 746px;
+
+  .goods__image {
+    display: block;
+    height: 746px;
   }
 
-  .goods__head{
+  .goods__head {
     font-size: 43px;
     line-height: 50px;
     padding-top: 152px;
   }
-  .goods__list{
+
+  .goods__list {
     width: 87%;
     height: 131px;
     padding: 0 6.5%;
     position: absolute;
     display: flex;
-}
-  .goods__item{
+  }
+
+  .goods__item {
     width: 50%;
     bottom: 0;
     height: 130px;
   }
-  .goods__link{
+
+  .goods__link {
     font-size: 20px;
     line-height: 30px;
     margin-left: 37px;
     padding: 0;
     margin-top: -16px;
   }
-  .goods__link-ico{
+
+  .goods__link-ico {
     right: 11%;
   }
-  .goods__link-text{
+
+  .goods__link-text {
     padding: 0;
     font-size: 20px;
     line-height: 30px;
   }
-  .goods__item:hover{
+
+  .goods__item:hover {
     height: 130px;
     margin-top: -5px;
     transition: all 0.3s ease;
   }
 }
 
-@media (min-width: $desktop-width) { //1150
-  .goods{
-
+@media (min-width: $desktop-width) {
+  .goods {
     min-height: 756px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-//    background: url("../img/hero-desktop@1x.jpg") 50% 0 no-repeat;
-    &:after{
+
+    &::after {
       content: "";
       position: absolute;
       display: block;
       width: 100%;
-      height: 24px;
+      height: 30px;
       background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat;
+      background-size: 100% 38px;
       bottom: 0;
     }
   }
-  .goods__head{
+
+  .goods__head {
     font-size: 53px;
     line-height: 57px;
     padding-top: 152px;
   }
-  .goods__list{
+
+  .goods__list {
     position: absolute;
     display: flex;
     width: 87%;
     bottom: -15px;
     justify-content: center;
   }
-  .goods__item{
+
+  .goods__item {
     width: 525px;
+    height: 123px;
     bottom: 0;
+
+    &:hover {
+      height: 128px;
+      margin-top: -5px;
+      transition: all 0.3s ease;
+    }
   }
-  .goods__link{
+
+  .goods__link {
     font-size: 20px;
     line-height: 30px;
     margin-left: 37px;
   }
-  .goods__link-ico{
+
+  .goods__link-text {
+    margin-top: 10px;
+  }
+
+  .goods__link-ico {
     right: 7%;
     top: 31px;
   }

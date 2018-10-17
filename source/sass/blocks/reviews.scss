@@ -1,35 +1,41 @@
-.reviews{
+.reviews {
   width: 82%;
   padding: 0 9%;
   margin-top: 52px;
   margin-bottom: 44px;
 }
-.reviews__back{
+
+.reviews__back {
   display: none;
 }
-.reviews__header{
+
+.reviews__header {
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 20px;
 }
-.reviews__item{
+
+.reviews__item {
   margin: 0;
   padding: 0;
 }
-.reviews__text{
+
+.reviews__text {
   font-size: 15px;
   line-height: 30px;
   margin-top: 24px;
   margin-bottom: 28px;
 }
-.reviews__author-name{
+
+.reviews__author-name {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   font-style: normal;
   word-wrap: break-word;
 }
-.reviews__author-contact{
+
+.reviews__author-contact {
   display: block;
   font-size: 17px;
   line-height: 30px;
@@ -37,15 +43,16 @@
   width: 260px;
   margin-bottom: 31px;
   word-wrap: break-word;
-
 }
-.reviews__container-btn{
+
+.reviews__container-btn {
   position: relative;
   border: 1px solid $c-border;
   width: 98%;
   display: flex;
   cursor: pointer;
-  &:after{
+
+  &::after {
     content: "";
     position: absolute;
     width: 1px;
@@ -55,7 +62,8 @@
     top: 0;
   }
 }
-.reviews__btn{
+
+.reviews__btn {
   background-color: transparent;
   border: none;
   width: 50%;
@@ -63,21 +71,25 @@
   padding: 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  &:hover{
+
+  &:hover {
     transition: all 0.3s ease;
     opacity: 0.6;
   }
-  &:active{
+
+  &:active {
     transition: all 0.3s ease;
     opacity: 0.3;
   }
-  &--img-prev{
+
+  &--img-prev {
     border: none;
     background-color: inherit;
     width: 49px;
     height: 26px;
-    }
-  &--img-next{
+  }
+
+  &--img-next {
     border: none;
     background-color: inherit;
     width: 49px;
@@ -85,7 +97,7 @@
   }
 }
 
-.reviews__btn-write{
+.reviews__btn-write {
   margin-top: 38px;
   padding: 14px 0;
   width: 97%;
@@ -98,18 +110,21 @@
   color: $reviev-color;
   font-size: 18px;
   line-height: 20px;
-  &:hover{
+
+  &:hover {
     transition: all 0.3s ease;
     background-color: $reviev-color;
     color: $color-whete;
   }
-  &:active{
+
+  &:active {
     transition: all 0.3s ease;
-    color: rgba($color-whete,.3);
+    color: rgba($color-whete, 0.3);
   }
 }
+
 @media (min-width: $tablet-width) {
-  .reviews{
+  .reviews {
     position: relative;
     width: 88%;
     min-height: 482px;
@@ -118,13 +133,15 @@
     padding: 0 6%;
     margin-top: 0;
   }
-  .reviews__container{
+
+  .reviews__container {
     display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
   }
-  .reviews__back{
+
+  .reviews__back {
     display: block;
     position: absolute;
     width: 350px;
@@ -132,20 +149,19 @@
     left: -6.9%;
     z-index: -1;
   }
-  .reviews__header{
+
+  .reviews__header {
     display: block;
     font-size: 43px;
     line-height: 50px;
     order: 1;
     margin: 0;
-    height: auto;
     height: 25px;
     margin-top: 77px;
     margin-bottom: 67px;
   }
 
-  .reviews__text{
-    display: block;
+  .reviews__text {
     font-size: 17px;
     line-height: 30px;
     display: block;
@@ -157,14 +173,15 @@
     margin-bottom: 57px;
   }
 
-  .reviews__author-name{
+  .reviews__author-name {
     font-size: 18px;
     display: block;
     width: 99.5%;
     margin-left: 0.5%;
     margin-bottom: 5px;
   }
-  .reviews__item{
+
+  .reviews__item {
     display: block;
     position: relative;
     order: 3;
@@ -172,52 +189,50 @@
     margin-top: 0;
   }
 
-  .reviews__container-btn{
+  .reviews__container-btn {
     position: absolute;
     width: 176px;
     bottom: 36px;
     right: 0;
     border: none;
     margin-right: 0.5%;
-    &:after{
+
+    &::after {
       display: none;
     }
   }
 
-  .reviews__btn{
+  .reviews__btn {
     order: 4;
   }
 
-  .reviews__btn-write{
+  .reviews__btn-write {
     display: block;
     font-size: 17px;
     line-height: 20px;
     width: 171px;
     padding: 11.5px 0;
-    margin-right: 0.5%;
     order: 2;
     height: 25px;
-    margin: 0;
     margin-left: auto;
     margin-top: -90px;
     margin-bottom: 45px;
     margin-right: 0.5%;
   }
 }
+
 @media (min-width: $desktop-width) {
-  .reviews{
+  .reviews {
     position: relative;
-    width: 100%;
     padding: 0;
-    margin: 0 auto;
-    min-height: 547px;
     display: flex;
     flex-wrap: wrap;
     width: 1050px;
     margin: 0 auto;
     min-height: 600px;
   }
-  .reviews__back{
+
+  .reviews__back {
     display: block;
     position: absolute;
     width: 350px;
@@ -226,28 +241,31 @@
     top: 76px;
     z-index: -1;
   }
-  .reviews__header{
+
+  .reviews__header {
     display: block;
     font-size: 53px;
     line-height: 57px;
     order: 1;
     margin: 0;
-    height: auto;
     height: 25px;
     padding-top: 148px;
     margin-left: 170px;
     margin-bottom: 23px;
   }
-  .reviews__author-name{
+
+  .reviews__author-name {
     display: block;
     width: 670px;
     margin-top: 35px;
     margin-left: 175px;
   }
-  .reviews__author-contact{
+
+  .reviews__author-contact {
     margin-left: 175px;
   }
-  .reviews__item{
+
+  .reviews__item {
     display: block;
     position: relative;
     order: 3;
@@ -255,14 +273,16 @@
     margin-top: 0;
     top: -20px;
   }
-  .reviews__container-btn{
+
+  .reviews__container-btn {
     position: absolute;
     border: none;
     width: 173px;
     bottom: 35px;
     right: 0;
     margin-right: 1px;
-    &:after{
+
+    &::after {
       content: "";
       position: absolute;
       width: 0;
@@ -270,10 +290,12 @@
       background-color: none;
     }
   }
-  .reviews__btn{
+
+  .reviews__btn {
     order: 4;
   }
-  .reviews__text{
+
+  .reviews__text {
     display: block;
     margin-top: 70px;
     font-size: 17px;
@@ -284,7 +306,8 @@
     width: 770px;
     margin-bottom: 38px;
   }
-  .reviews__btn-write{
+
+  .reviews__btn-write {
     display: block;
     font-size: 17px;
     line-height: 20px;

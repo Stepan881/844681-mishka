@@ -1,15 +1,31 @@
-.contacts{
-  background: url("../img/bg-zigzag-line.svg") 50% 0 repeat-x;
+.contacts {
+  owerflow: hidden;
+  box-sizing: border-box;
   background-size: 100%;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/bg-zigzag-line.svg") center repeat-x;
+    background-size: 100% 20px;
+    transform: rotate(180deg);
+    overflow: hidden;
+    width: 100%;
+    height: 1.5%;
+    top: -4px;
+  }
 }
-.contacts__container{
+
+.contacts__container {
   width: 82%;
   padding: 0 9%;
 }
-.contacts__header{
+
+.contacts__header {
   margin: 0;
   padding-top: 42px;
   padding-bottom: 26px;
@@ -17,7 +33,7 @@
   line-height: 30px;
 }
 
-.contacts__list{
+.contacts__list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -26,47 +42,75 @@
   padding: 0;
 }
 
-.contacts-list__item{
+.contacts-list__item {
   font-size: 15px;
   line-height: 30px;
   color: $reviev-color;
-  &:nth-child(odd){
+
+  &:nth-child(odd) {
     width: 29%;
     margin-bottom: 30px;
   }
-  &:nth-child(even){
+
+  &:nth-child(even) {
     width: 71%;
     margin-left: auto;
   }
 }
-.contacts-list__address{
-  font-style: normal;
 
+.contacts-list__address {
+  font-style: normal;
 }
-.contacts-list__mail{
+
+.contacts-list__mail {
   text-decoration: none;
   padding-bottom: 4px;
   border-bottom: 1px solid $firm-bgcolor;
   color: $reviev-color;
   transition: all 0.3s ease;
-  &:hover{
+
+  &:hover {
     transition: all 0.3s ease;
     color: $firm-bgcolor;
   }
-  &:active{
+
+  &:active {
     transition: all 0.3s ease;
     opacity: 0.3;
   }
 }
-.contacts__back{
+
+.contacts__map {
   display: block;
-  min-height: 475px;
+  height: 475px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
-  &:after{
+}
+
+.contacts__map-iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -161px;
+  border: 0;
+  height: 460px;
+  width: 322px;
+  z-index: 10;
+}
+
+.contacts__back {
+  display: block;
+  height: 475px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+
+  &::after {
     content: "";
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
@@ -79,7 +123,8 @@
     top: 143px;
   }
 }
-.contacts__btn-write{
+
+.contacts__btn-write {
   margin: 0 auto;
   margin-bottom: 39px;
   display: flex;
@@ -95,30 +140,40 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  &:hover{
+
+  &:hover {
     transition: all 0.3s ease;
     background-color: $reviev-color;
     color: $color-whete;
   }
-  &:active{
-    transition: all 0.3s ease;
-    color: rgba($color-whete,.3);
-  }
 
+  &:active {
+    transition: all 0.3s ease;
+    color: rgba($color-whete, 0.3);
+  }
 }
-.contacts__containers{
+
+.contacts__containers {
   width: 82%;
   padding: 0 9%;
 }
+
 @media (min-width: $tablet-width) {
-  .contacts{
+  .contacts {
     margin-bottom: 57px;
+
+    &::after {
+      box-sizing: border-box;
+      height: 3.5%;
+    }
   }
-  .contacts__container{
+
+  .contacts__container {
     width: 88%;
     padding: 0 6%;
   }
-  .contacts__header{
+
+  .contacts__header {
     display: flex;
     width: 100%;
     font-size: 43px;
@@ -127,7 +182,8 @@
     position: relative;
     padding-bottom: 0;
     margin-bottom: 49px;
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       background-image: url("../img/icon-flag.svg");
@@ -136,11 +192,10 @@
       bottom: -16px;
       width: 54px;
       height: 81px;
-
     }
-
   }
-  .contacts__list{
+
+  .contacts__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,48 +203,66 @@
     margin: 0 auto;
     margin-bottom: 56px;
   }
-  .contacts-list__item{
-    font-size: 15px;
-    line-height: 24px;
+
+  .contacts-list__item {
     font-size: 17px;
     line-height: 30px;
-    &:nth-child(odd){
+
+    &:nth-child(odd) {
       width: 11%;
       margin-bottom: 46px;
     }
-    &:nth-child(even){
+
+    &:nth-child(even) {
       width: 38.5%;
       margin: 0;
     }
   }
 
+  .contacts__map-iframe {
+    left: 50%;
+    margin-left: -384px;
+    width: 768px;
+  }
+
   .contacts__back {
     margin-bottom: 37px;
   }
-  .contacts__btn-write{
+
+  .contacts__btn-write {
     width: 29.5%;
     margin-bottom: 0;
   }
-  .contacts__containers{
+
+  .contacts__containers {
     width: 88%;
     padding: 0 6%;
   }
 }
+
 @media (min-width: $desktop-width) {
-  .contacts{
+  .contacts {
     padding-top: 50px;
     min-height: 607px;
     margin: 0 auto;
     width: 1050px;
     position: relative;
+
+    &::after {
+      background-size: 100% 22px;
+      height: 4.5%;
+      top: -2px;
+    }
   }
-  .contacts__container{
+
+  .contacts__container {
     width: 708px;
     margin: 0 auto;
     margin-top: 116px;
     padding: 0;
   }
-  .contacts__header{
+
+  .contacts__header {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -199,7 +272,8 @@
     font-size: 53px;
     line-height: 57px;
     position: relative;
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       background-image: url("../img/icon-flag.svg");
@@ -210,25 +284,8 @@
       left: -108px;
     }
   }
-  .contacts__list{
-    width: 350px;
-    margin-left: 0;
-    flex-direction: row;
-    padding-top: 46px;
-  }
-  .contacts-list__item{
-    font-weight: 15px;
-    font-style: 30px;
-    &:nth-child(odd){
-      width: 23%;
-      margin-bottom: 28px;
-    }
-    &:nth-child(even){
-      width: 77%;
-      margin-left: auto;
-    }
-  }
-  .contacts__back{
+
+  .contacts__map {
     position: absolute;
     min-height: 460px;
     margin: 0 auto;
@@ -237,10 +294,51 @@
     left: 50%;
     top: 94px;
   }
-  .contacts__btn-write{
+
+  .contacts__map-iframe {
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    border: 0;
+    height: 460px;
+    width: 525px;
+  }
+
+  .contacts__list {
+    width: 350px;
+    margin-left: 0;
+    flex-direction: row;
+    padding-top: 46px;
+  }
+
+  .contacts-list__item {
+    font-weight: 15px;
+    font-style: 30px;
+
+    &:nth-child(odd) {
+      width: 23%;
+      margin-bottom: 28px;
+    }
+
+    &:nth-child(even) {
+      width: 77%;
+      margin-left: auto;
+    }
+  }
+
+  .contacts__back {
+    position: absolute;
+    min-height: 460px;
+    margin: 0 auto;
+    width: 524px;
+    height: 457px;
+    left: 0;
+    top: 0;
+  }
+
+  .contacts__btn-write {
     width: 226px;
     padding: 0;
     margin: 82px 175px 0;
-
   }
 }
