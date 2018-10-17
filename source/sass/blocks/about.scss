@@ -13,7 +13,7 @@
     transform: rotate(180deg);
     overflow: hidden;
     width: 100%;
-    height: 2.5%;
+    height: 2.6%;
     top: -4px;
     box-sizing: border-box;
   }
@@ -28,7 +28,7 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  padding-top: 32px;
+  padding-top: 12px;
 }
 
 .about__list {
@@ -43,7 +43,8 @@
   line-height: 20px;
   font-weight: bold;
   margin-top: 84px;
-  width: 100%;
+  margin-right: 2%;
+  width: 98%;
 
   &:nth-child(1) {
     .about__ico {
@@ -149,10 +150,10 @@
   .about__item {
     display: block;
     position: relative;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 22px;
     font-weight: bold;
-    width: 50%;
+    width: 48%;
     margin-bottom: 13px;
   }
 
@@ -171,7 +172,7 @@
     &::after {
       background-size: 100% 22px;
       height: 4.5%;
-      top: -38px;
+      top: -3px;
     }
   }
 
@@ -184,7 +185,7 @@
   .about__header {
     width: 1050px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 0;
     font-size: 53px;
     line-height: 57px;
   }
@@ -195,7 +196,6 @@
   }
 
   .about__item {
-    font-size: 20px;
-    line-height: 22px;
+    width: 337px;
   }
 }

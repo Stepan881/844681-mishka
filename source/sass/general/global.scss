@@ -1,7 +1,6 @@
 /* ------------------------------------------ */
 /* GLOBAL
 /* ------------------------------------------ */
-/*stylelint-disable*/
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $retina-dpi: 144dpi;
@@ -25,7 +24,7 @@ $bg-goods: rgb(249, 249, 249);
 
 html {
   box-sizing: border-box;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: $color;
@@ -39,7 +38,24 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  .hid {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .hid {
+    display: block;
+  }
+}
+
+@media (min-width: 400px) {
+  .hidd {
+    display: none;
+  }
 }

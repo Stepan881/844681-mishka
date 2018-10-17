@@ -15,7 +15,7 @@
     transform: rotate(180deg);
     overflow: hidden;
     width: 100%;
-    height: 1.5%;
+    height: 2%;
     top: -4px;
   }
 }
@@ -232,6 +232,7 @@
   .contacts__btn-write {
     width: 29.5%;
     margin-bottom: 0;
+    margin-top: 37px;
   }
 
   .contacts__containers {
@@ -243,7 +244,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding-top: 50px;
-    min-height: 607px;
+    min-height: 656px;
     margin: 0 auto;
     width: 1050px;
     position: relative;

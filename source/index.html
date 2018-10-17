@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
   </head>
   <body>
     <header class="header">
@@ -15,7 +14,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
             </picture>
           </a>
         </div>
@@ -27,7 +26,7 @@
             <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
             <li class="header__item">
               <a class="header__link" href="#">
-                <svg class="header__icon header__icon--search">
+                <svg class="header__icon header__icon--search" width="20" height="20">
                   <use xlink:href="img/icon.svg#search"></use>
                 </svg>
                 <span class="header__link-hidden">Поиск по сайту</span>
@@ -35,7 +34,7 @@
             </li>
             <li class="header__item">
               <a class="header__link" href="#">
-                <svg class="header__icon header__icon--cart">
+                <svg class="header__icon header__icon--cart" width="20" height="20">
                   <use xlink:href="img/icon.svg#cart"></use>
                 </svg>
                 Корзина: пока пуста
@@ -56,7 +55,7 @@
           <source type="image/webp" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
-          <img class="goods__image" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" alt="Милые штуки">
+          <img class="goods__image" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" alt="Милые штуки" height="100%" aria-label="фото фона">
         </picture>
         <div class="goods__container">
           <h1 class="visually-hidden">Магазин "Мишка"</h1>
@@ -65,7 +64,7 @@
             <li class="goods__item">
               <a class="goods__link" href="#">
                 <span class="goods__link-text">Предметы интерьера</span>
-                <svg class="goods__link-ico goods__link-ico--interior">
+                <svg class="goods__link-ico goods__link-ico--interior" width="130" height="60">
                   <use xlink:href="img/icon-interior.svg#svg4488"></use>
                 </svg>
               </a>
@@ -73,7 +72,7 @@
             <li class="goods__item">
               <a class="goods__link" href="#">
                 <span class="goods__link-text">Детские игрушки</span>
-                <svg class="goods__link-ico goods__link-ico--toy">
+                <svg class="goods__link-ico goods__link-ico--toy" width="130" height="60">
                   <use xlink:href="img/icon-toy.svg#Layer_1"></use>
                 </svg>
               </a>
@@ -108,7 +107,7 @@
             <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="baskets__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            <img class="baskets__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
           </picture>
 
           <span class="baskets__price">Цена: 990 руб.</span>
@@ -121,37 +120,37 @@
           <h2 class="about__header">Коротко о нас:</h2>
           <ul class="about__list">
             <li class="about__item">
-              <svg class="about__ico">
+              <svg class="about__ico" width="20" height="20">
                 <use xlink:href="img/icon.svg#ico1"></use>
               </svg>
               Экологически<br class="hid"> чистые материалы
             </li>
             <li class="about__item">
-              <svg class="about__ico">
+              <svg class="about__ico" width="20" height="20">
                 <use xlink:href="img/icon.svg#ico2"></use>
               </svg>
               Скандинавский стиль<br class="hid"> по российской цене
             </li>
             <li class="about__item">
-              <svg class="about__ico">
+              <svg class="about__ico" width="20" height="20">
                 <use xlink:href="img/icon.svg#ico3"></use>
               </svg>
               Увеличивает лайки<br class="hid"> на фотографиях
             </li>
             <li class="about__item">
-                <svg class="about__ico">
+                <svg class="about__ico" width="20" height="20">
                   <use xlink:href="img/icon.svg#ico4"></use>
                 </svg>
               Связано вручную с<br class="hid"> любовью и умилением
             </li>
             <li class="about__item">
-              <svg class="about__ico">
+              <svg class="about__ico" width="20" height="20">
                 <use xlink:href="img/icon.svg#ico5"></use>
               </svg>
               Поддержка отечественного производителя
             </li>
             <li class="about__item">
-              <svg class="about__ico">
+              <svg class="about__ico" width="20" height="20">
                 <use xlink:href="img/icon.svg#ico6"></use>
               </svg>
               Поставляется в<br class="hid"> подарочной упаковке
@@ -164,18 +163,32 @@
           <picture class="reviews__back">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/review@1x.webp 1x, img/review@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x">
-            <img class="reviews__image" src="img/review@1x.jpg" srcset="img/review@2x.jpg" alt="Фон отзывов">
+            <img class="reviews__image" src="img/review@1x.jpg" srcset="img/review@2x.jpg" alt="Фон отзывов" width="350" height="100%">
           </picture>
           <h2 class="reviews__header">Отзывы</h2>
           <blockquote class="reviews__item">
             <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              Я молодая мама, всё равно<br class="hidd">
+              фотографии не набирали и близко<br class="hidd">
+              такого количества лайков, как у<br class="hidd">
+              популярных инстамамочек. В<br class="hidd">
+              отчаянии, я накупила аксессуаров<br class="hidd">
+              и игрушек в Мишке, и мои<br class="hidd">
+              фотографии сразу стали более<br class="hidd">
+              стильными, а также набирают<br class="hidd">
+              больше лайков!
             </p>
             <cite class="reviews__author-name">Анастасия Красильникова</cite>
             <a class="reviews__author-contact" href="#">@misssssiskras</a>
             <div class="reviews__container-btn">
-              <button class="reviews__btn" type="button"><img class="reviews__btn-img" src="img/icon-left-arrow.svg" width="50" height="26" alt="prev"></button>
-              <button class="reviews__btn" type="button"><img class="reviews__btn-img" src="img/icon-right-arrow.svg" width="50" height="26" alt="next"></button>
+              <button class="reviews__btn" type="button">
+                <span class="visually-hidden">Назад</span>
+                <img class="reviews__btn-img" src="img/icon-left-arrow.svg" width="50" height="26" alt="prev">
+              </button>
+              <button class="reviews__btn" type="button">
+                <span class="visually-hidden">Вперёд</span>
+                <img class="reviews__btn-img" src="img/icon-right-arrow.svg" width="50" height="26" alt="next">
+              </button>
             </div>
           </blockquote>
           <a class="reviews__btn-write" href="#">Написать</a>
@@ -210,7 +223,8 @@
     <footer class="footer">
       <div class="footer__containers">
         <a class="footer__logo">
-          <svg class="footer__logo-img">
+          <span class="visually-hidden">Мишка</span>
+          <svg class="footer__logo-img" width="102" height="43">
             <use xlink:href="img/icon.svg#logotip"></use>
           </svg>
         </a>
@@ -218,21 +232,24 @@
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link footer__link--instagram" href="#">
-                <svg>
+                <span class="visually-hidden">Мы в инстагарм</span>
+                <svg width="20" height="20">
                   <use xlink:href="img/icon.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link footer__link--facebook" href="#">
-                <svg>
+                <span class="visually-hidden">Мы в фейсбуке</span>
+                <svg width="20" height="20">
                   <use xlink:href="img/icon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__item">
               <a class="footer__link footer__link--twitter" href="#">
-                <svg>
+                <span class="visually-hidden">Мы в твитере</span>
+                <svg width="20" height="20">
                   <use xlink:href="img/icon.svg#twitter"></use>
                 </svg>
               </a>
@@ -243,7 +260,7 @@
           <div class="footer__container">
             <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="footer__developed">Разработано</b>
-              <svg>
+              <svg width="34" height="27">
                 <use xlink:href="img/icon.svg#logo2"></use>
               </svg>
             </a>
@@ -265,7 +282,7 @@
             <input class="popap__link visually-hidden" type="radio" name="Размер" value="l">
             <span class="popap__text">m</span>
           </label>
-          <label class="popap__label ">
+          <label class="popap__label">
             <input class="popap__link visually-hidden" type="radio" name="Размер" value="m">
             <span class="popap__text">l</span>
           </label>
@@ -273,9 +290,9 @@
         </form>
       </div>
     </section>
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
-    <script src="js/picturefill.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

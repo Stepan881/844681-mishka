@@ -74,7 +74,7 @@
   background-color: transparent;
   border: 2px solid $reviev-color;
   width: 92%;
-  height: 46px;
+  min-height: 46px;
   box-sizing: content-box;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -182,7 +182,6 @@
     width: 40.7%;
     margin-left: 2px;
     order: 5;
-    height: 46px;
   }
 }
 
@@ -250,7 +249,6 @@
 
   .baskets__btn-order {
     margin-left: 175px;
-    height: 46px;
     width: 276px;
   }
 }
