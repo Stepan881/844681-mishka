@@ -40,9 +40,9 @@
                 Корзина: пока пуста
               </a>
             </li>
-            <li class="header__item"><a class="header__link" href="#">Новые поступления</a></li>
-            <li class="header__item"><a class="header__link" href="#">Распродажа</a></li>
-            <li class="header__item"><a class="header__link" href="#">Бесплатная доставка по России</a></li>
+            <li class="header__item header__item--mobil header__item--table"><a class="header__link" href="#">Новые поступления</a></li>
+            <li class="header__item header__item--mobil header__item--table"><a class="header__link" href="#">Распродажа</a></li>
+            <li class="header__item header__item--mobil"><a class="header__link" href="#">Бесплатная доставка по России</a></li>
           </ul>
         </nav>
       </div>
@@ -136,12 +136,6 @@
       </section>
       <section class="production">
         <div class="production__wapper">
-          <div class="production__container">
-            <svg width="20" height="20">
-              <use xlink:href="img/icon.svg#video"></use>
-            </svg>
-            <h2 class="production__header">Процесс производства</h2>
-          </div>
           <div class="production__video">
             <picture class="production__img">
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
@@ -156,8 +150,14 @@
               <use xlink:href="img/icon.svg#play"></use>
             </svg>
           </div>
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <div class="production__container">
+            <svg width="20" height="20">
+              <use xlink:href="img/icon.svg#video"></use>
+            </svg>
+            <h2 class="production__header">Процесс производства</h2>
+          </div>
           <div class="production__container-btn">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production__btn" href="#">Сделать заказ</a>
           </div>
         </div>
@@ -225,7 +225,7 @@
             <input class="popap__link visually-hidden" type="radio" name="Размер" value="l">
             <span class="popap__text">m</span>
           </label>
-          <label class="popap__label ">
+          <label class="popap__label">
             <input class="popap__link visually-hidden" type="radio" name="Размер" value="m">
             <span class="popap__text">l</span>
           </label>

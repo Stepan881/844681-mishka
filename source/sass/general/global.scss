@@ -42,20 +42,24 @@ html {
   overflow: hidden;
 }
 
+.desk {
+  display: none;
+}
+
 @media (min-width: 800px) {
   .hid {
     display: none;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .hid {
     display: block;
   }
 }
 
-@media (min-width: 400px) {
-  .hidd {
-    display: none;
+@media (min-width: $desktop-width) {
+  .desk {
+    display: table;
   }
 }

@@ -8,6 +8,8 @@
   width: 258px;
   margin: 0 auto 10px;
   border: 1px solid $c-border;
+  display: flex;
+  flex-direction: column;
 }
 
 .production__wapper:hover {
@@ -28,6 +30,7 @@
   margin-top: 23px;
   margin-bottom: 24px;
   fill: $firm-bgcolor;
+  order: -1;
 
   svg {
     margin-top: 3px;
@@ -158,7 +161,8 @@
   .production__video {
     order: 1;
     width: 100%;
-    height: 461px;
+    height: 462px;
+    margin: 0 auto;
   }
 
   .production__text {
@@ -169,8 +173,6 @@
     font-size: 15px;
     line-height: 30px;
     color: $reviev-color;
-    border-left: 1px solid $c-border;
-    border-right: 1px solid $c-border;
   }
 
   .production__container-btn {
@@ -188,7 +190,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    margin-top: 34px;
+    margin-top: 0;
     margin-bottom: 95px;
   }
 
@@ -196,24 +198,24 @@
     width: 1050px;
     padding: 0;
     margin: 0 auto;
-    height: 455px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+    min-height: 455px;
+    position: relative;
+    margin-bottom: 11px;
   }
 
   .production__container {
     order: 2;
-    width: 277px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 42px 11px 9px 76px;
+    width: 280px;
+    padding: 42px 11px 11px 76px;
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+
 
     svg {
-      margin-top: 5px;
-      margin-left: 3px;
+      display: block;
+      margin-top: 0;
+      margin-left: 0;
     }
   }
 
@@ -225,8 +227,10 @@
   .production__video {
     order: 1;
     background: url("../img/video-desktop@1x.jpg") 50% 0 no-repeat;
-    width: 682px;
-    height: 454px;
+    width: 681px;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
   }
 
   .production__text {
@@ -234,11 +238,15 @@
     width: 230px;
     display: block;
     padding: 0 57px 47px 77px;
+    margin-left: auto;
   }
 
   .production__container-btn {
-    padding-bottom: 59px;
-    width: 364px;
+    padding-bottom: 57px;
+    width: 367px;
+    min-height: 180px;
+    display: inline-block;
+    margin-left: auto;
   }
 
   .production__btn {

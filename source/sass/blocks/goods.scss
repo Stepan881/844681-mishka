@@ -22,7 +22,10 @@
 
 .goods__image {
   display: block;
-  height: 373px;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 .goods__head {
@@ -153,7 +156,6 @@
   }
 
   .goods__image {
-    display: block;
     height: 746px;
   }
 
@@ -219,6 +221,10 @@
       background-size: 100% 38px;
       bottom: 0;
     }
+  }
+
+  .goods__image {
+    width: 1150px;
   }
 
   .goods__head {
