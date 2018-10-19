@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0 40px;
   border-bottom: 1px solid $bg-footer-line;
