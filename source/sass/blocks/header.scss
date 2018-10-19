@@ -18,10 +18,6 @@
   padding-top: 21px;
   padding-bottom: 15px;
 
-  img {
-    width: 86px;
-    height: 35px;
-  }
   left: 50%;
   margin-left: -43px;
   position: relative;
@@ -39,6 +35,11 @@
       opacity: 0.3;
       transition: all 0.3s ease;
     }
+  }
+
+  img {
+    width: 86px;
+    height: 35px;
   }
 }
 
@@ -77,10 +78,11 @@
   transition: all 0.3s ease;
   margin-top: 0;
   z-index: 1;
+  min-height: 314px;
 }
 
 .header__nav {
-  margin-top: -500px;
+  margin-top: -2000px;
   transition: all 0.3s ease;
   position: relative;
   z-index: -1;
@@ -99,7 +101,7 @@
   border-bottom: 1px solid $c-border;
   position: relative;
 
-  &:nth-child(n+5) {
+  &--mobil {
     display: none;
   }
 
@@ -193,14 +195,6 @@
       width: 113px;
       height: 46px;
     }
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .header__btn {
@@ -230,14 +224,18 @@
     margin-left: auto;
 
     &--search {
-      left: 38px;
+      left: 33px;
       top: 35px;
     }
 
     &--cart {
-      left: 25px;
+      left: -54px;
       top: 32px;
     }
+  }
+
+  .header__btn:checked ~ .header__nav {
+    min-height: 130px;
   }
 
   .header__link {
@@ -254,6 +252,14 @@
 
   .header__item {
     border: none;
+
+    &--mobil {
+      display: block;
+    }
+
+    &--table {
+      display: none;
+    }
 
     &:nth-child(1) {
       order: 3;
@@ -282,8 +288,9 @@
       display: flex;
       align-items: center;
       align-self: flex-end;
-      margin-left: 47%;
+      margin-left: 48%;
       border-left: 1px solid $c-border;
+      border-right: 1px solid $c-border;
       height: 88px;
       width: 82px;
 
@@ -296,9 +303,8 @@
       padding-top: 5px;
       order: 2;
       display: block;
-      width: 260px;
+      width: auto;
       text-align: right;
-      border-left: 1px solid $c-border;
       margin-left: auto;
 
       .header__link {
@@ -351,7 +357,7 @@
     margin: 0 auto;
   }
 
-  .header__bg{
+  .header__bg {
     background-color: 0;
     width: 150px;
     left: 50%;
@@ -370,17 +376,9 @@
     left: 50%;
     margin-left: -75px;
 
-    img{
+    img {
       width: 149px;
       height: 72px;
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
 
@@ -428,6 +426,7 @@
       display: block;
       width: 184px;
       padding-top: 10px;
+      border-top: none;
       border-right: 1px solid $c-border;
       margin-left: 1px;
 
