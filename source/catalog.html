@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <header class="header">
@@ -18,9 +18,8 @@
             </picture>
           </a>
         </div>
-        <input class="header__btn" type="checkbox" id="burger" checked>
-        <label class="header__label" for="burger">Меню</label>
-        <nav class="header__nav">
+        <button class="header__btn header__btn--close" type="button">Открыть меню</button>
+        <nav class="header__nav header__nav--close">
           <ul class="header__nav-list">
             <li class="header__item"><a class="header__link">Каталог товаров</a></li>
             <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
@@ -222,11 +221,11 @@
             <span class="popap__text">s</span>
           </label>
           <label class="popap__label">
-            <input class="popap__link visually-hidden" type="radio" name="Размер" value="l">
+            <input class="popap__link visually-hidden" type="radio" name="Размер" value="s">
             <span class="popap__text">m</span>
           </label>
           <label class="popap__label">
-            <input class="popap__link visually-hidden" type="radio" name="Размер" value="m">
+            <input class="popap__link visually-hidden" type="radio" name="Размер" value="l">
             <span class="popap__text">l</span>
           </label>
           <button class="popap__btn-upload" type="submit">Добавить</button>

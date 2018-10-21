@@ -44,48 +44,44 @@
 }
 
 .header__btn {
-  display: none;
-}
-
-.header__label {
   position: absolute;
   border: none;
+  cursor: pointer;
+  color: transparent;
+  font-size: 0;
   top: 23px;
   left: 51%;
   margin-left: 100px;
   display: block;
   width: 30px;
   height: 30px;
-  cursor: pointer;
-  color: transparent;
-  font-size: 0;
-  background: url("../img/icon-menu-open.svg") center no-repeat;
   z-index: 3;
-  transition: all 0.3s ease;
-}
-
-.header__btn:checked + .header__label {
   background: url("../img/icon-menu-close.svg") center no-repeat;
-  width: 25px;
-  height: 23px;
-  margin-left: 103px;
-  top: 27px;
   transition: all 0.3s ease;
+
+  &--close {
+    width: 25px;
+    height: 23px;
+    margin-left: 103px;
+    top: 27px;
+    background: url("../img/icon-menu-open.svg") center no-repeat;
+    transition: all 0.3s ease;
+  }
 }
 
-.header__btn:checked ~ .header__nav {
+.header__nav {
   display: block;
   transition: all 0.3s ease;
   margin-top: 0;
   z-index: 1;
   min-height: 314px;
-}
 
-.header__nav {
-  margin-top: -2000px;
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: -1;
+  &--close {
+    margin-top: -2000px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: -1;
+  }
 }
 
 .header__nav-list {
@@ -94,6 +90,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 10;
 }
 
 .header__item {
