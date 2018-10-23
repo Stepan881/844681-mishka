@@ -83,7 +83,7 @@ gulp.task("server", function () {
 });
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/*.{woff, woff2}",
+    "source/fonts/**",
     "source/img/**",
     "source/js/picturefill.min.js",
     "source/js/svg4everybody.min.js",
