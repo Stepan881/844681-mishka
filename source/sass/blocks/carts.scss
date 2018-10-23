@@ -44,8 +44,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
 
   &::after {
@@ -78,6 +77,8 @@
   margin-bottom: 25px;
   cursor: pointer;
   position: relative;
+  word-wrap: break-word;
+  display: block;
 }
 
 .cart__radio + .cart__radio-check {
@@ -131,7 +132,7 @@
 
 .cart__list-color {
   width: 100%;
-  border: none;
+  border: 0;
   margin: 0 auto;
   padding: 0;
   display: flex;

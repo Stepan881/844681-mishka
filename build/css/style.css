@@ -2973,13 +2973,7 @@ html {
   border: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
   position: relative; }
   .cart__list-type::after {
     content: "";
@@ -3007,7 +3001,9 @@ html {
   margin-left: 61px;
   margin-bottom: 25px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  word-wrap: break-word;
+  display: block; }
 
 .cart__radio + .cart__radio-check {
   position: absolute;
@@ -3056,7 +3052,7 @@ html {
 
 .cart__list-color {
   width: 100%;
-  border: none;
+  border: 0;
   margin: 0 auto;
   padding: 0;
   display: -webkit-box;
