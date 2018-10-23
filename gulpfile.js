@@ -18,22 +18,19 @@ var htmlmin = require('gulp-htmlmin');
 var jsmin = require('gulp-jsmin');
 
 gulp.task('minjs', function () {
-    gulp.src('source/js/app.js')
-        .pipe(jsmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('source/js'));
+  return gulp.src('source/js/app.js')
+    .pipe(jsmin())
+    .pipe(rename('app.min.js'))
+    .pipe(gulp.dest('build/js'));
 });
-
 gulp.task('htmin', function () {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 });
-
 gulp.task("clean", function () {
   return del("build");
 });
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -47,7 +44,6 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon*.svg")
     .pipe(svgstore({
@@ -63,7 +59,6 @@ gulp.task("html", function () {
     ]))
     .pipe(gulp.dest("build"));
 });
-
 gulp.task("image", function () {
   return gulp.src("source/img**/*.{jpg,svg,png}")
     .pipe(imagemin)([
@@ -72,40 +67,37 @@ gulp.task("image", function () {
     ])
     .pipe(gulp.dest("build/img"));
 });
-
 gulp.task("webp", function () {
   return gulp.src("source/img**/*.{jpg,svg}")
     .pipe(webp({quality: 50}))
     .pipe(gulp.dest("build/img"));
 });
-
 gulp.task("server", function () {
   server.init({
     server: "build/",
   });
-
   gulp.watch("source/js/*.js", gulp.series("minjs", "refresh"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
   gulp.watch("source/img/icon*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
-
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/*.{woff, woff2}",
     "source/img/**",
-    "source/js/**",
+    "source/js/picturefill.min.js",
+    "source/js/svg4everybody.min.js",
     "source/*.html",
   ], {
     base: "source"
   })
+
   .pipe(gulp.dest("build"));
 });
-
 gulp.task("refresh", function(done) {
   server.reload();
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "htmin"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "htmin", "minjs"));
 gulp.task("start", gulp.series("build", "server"));

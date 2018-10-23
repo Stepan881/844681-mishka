@@ -11,7 +11,6 @@ headerbtn.addEventListener("click", function(evt) {
   console.log("click");
   headerbtn.classList.toggle("header__btn--close");
   headerbtn.classList.toggle("header__btn--open");
-
   headernav.classList.toggle("header__nav--open");
   headernav.classList.toggle("header__nav--close");
 });
