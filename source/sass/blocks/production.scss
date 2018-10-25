@@ -125,8 +125,8 @@
   }
 
   .production__wapper {
-    width: 87%;
-    margin: 0 6.5%;
+    width: 668px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     border: 0;
@@ -141,7 +141,8 @@
     order: 2;
     padding: 33px 44px 24px;
     margin: 0;
-    margin-top: -6px;
+    margin-top: -7px;
+    margin-bottom: 1px;
     border-left: 1px solid $c-border;
     border-top: 1px solid $c-border;
     border-right: 1px solid $c-border;

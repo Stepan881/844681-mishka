@@ -11,7 +11,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
         <div class="header__bg">
           <a class="header__logo header__logo--active" href="index.html">
             <picture>
@@ -47,7 +46,6 @@
             <li class="header__item header__item--mobil"><a class="header__link" href="#">Бесплатная доставка по России</a></li>
           </ul>
         </nav>
-      </div>
     </header>
     <main>
     <section class="cart">
@@ -62,70 +60,55 @@
       <form class="cart__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="cart__list-type">
           <legend class="cart__logo-type">Тип</legend>
-          <label class="cart__type">
-            <input class="cart__radio visually-hidden" type="radio" name="Тип" value="Аксессуар для интерьера" checked>
-            <span class="cart__radio-check"></span>
-            Аксессуар для<br class="hidde">
-            интерьера
-          </label>
-          <label class="cart__type">
-            <input class="cart__radio visually-hidden" type="radio" name="Тип" value="Детская игрушка">
-            <span class="cart__radio-check"></span>
-            Детская игрушка
-          </label>
+          <div class="cart__type-wapper">
+            <input class="cart__radio" id="accessory" type="radio" name="Тип" value="Аксессуар для интерьера" checked>
+            <label class="cart__type" for="accessory">Аксессуар для<br class="hidde"> интерьера</label>
+          </div>
+          <div class="cart__type-wapper">
+            <input class="cart__radio" id="toy" type="radio" name="Тип" value="Детская игрушка">
+            <label class="cart__type" for="toy">Детская игрушка</label>
+          </div>
         </fieldset>
       <div class="cart__container-color">
         <fieldset class="cart__list-color">
-          <legend class="cart__logo-color">Цвет</legend>
-          <div class="cart__color-wapper">
-            <label class="cart__color">
-              <input class="cart__checkbox visually-hidden" type="checkbox" name="Цвет" value="Белый" checked>
-              <span class="cart__checkbox-check"></span>
-              Белый
-            </label>
-            <label class="cart__color">
-              <input class="cart__checkbox visually-hidden" type="checkbox" name="Цвет" value="Серый" checked>
-              <span class="cart__checkbox-check"></span>
-              Серый
-            </label>
-            <label class="cart__color">
-              <input class="cart__checkbox visually-hidden" type="checkbox" name="Цвет" value="«Тиффани»">
-              <span class="cart__checkbox-check"></span>
-              «Тиффани»
-            </label>
-            <label class="cart__color">
-              <input class="cart__checkbox visually-hidden" type="checkbox" name="Цвет" value="Черный">
-              <span class="cart__checkbox-check"></span>
-              Черный
-            </label>
-            <label class="cart__color">
-              <input class="cart__checkbox visually-hidden" type="checkbox" name="Цвет" value="Розовый">
-              <span class="cart__checkbox-check"></span>
-              Розовый
-            </label>
-            <label class="cart__color">
-              <input class="cart__checkbox visually-hidden" type="checkbox" name="Цвет" value="Оранжевый">
-              <span class="cart__checkbox-check"></span>
-              Оранжевый
-            </label>
-          </div>
+          <div class="cart__list-container">
+            <legend class="cart__logo-color">Цвет</legend>
+              <div class="cart__color-wapper">
+                <input class="cart__checkbox" id="White" type="checkbox" name="Цвет" value="Белый" checked>
+                <label class="cart__color" for="White">Белый</label>
+              </div>
+              <div class="cart__color-wapper">
+                <input class="cart__checkbox" id="Gray" type="checkbox" name="Цвет" value="Серый" checked>
+                <label class="cart__color" for="Gray">Серый</label>
+              </div>
+              <div class="cart__color-wapper">
+                <input class="cart__checkbox" id="Tiffany" type="checkbox" name="Цвет" value="«Тиффани»" checked>
+                <label class="cart__color" for="Tiffany">«Тиффани»</label>
+              </div>
+              <div class="cart__color-wapper">
+                <input class="cart__checkbox" id="Black" type="checkbox" name="Цвет" value="Черный" checked>
+                <label class="cart__color" for="Black">Черный</label>
+              </div>
+              <div class="cart__color-wapper">
+                <input class="cart__checkbox" id="Pink" type="checkbox" name="Цвет" value="Розовый" checked>
+                <label class="cart__color" for="Pink">Розовый</label>
+              </div>
+              <div class="cart__color-wapper">
+                <input class="cart__checkbox" id="Orange" type="checkbox" name="Цвет" value="Оранжевый" checked>
+                <label class="cart__color" for="Orange">Оранжевый</label>
+              </div>
+            </div>
         </fieldset>
       </div>
         <fieldset class="cart__list-name">
           <legend class="cart__logo-name">ФИО</legend>
           <div class="cart__list-wapper">
-            <label class="cart__name">
-              Имя:
-              <input class="cart__text" type="text" name="Имя" placeholder="Введите ваше имя*" required>
-            </label>
-            <label  class="cart__name">
-              Фамилия:
-              <input class="cart__text" type="text" name="Фамилия" placeholder="Укажите фамилию*" required>
-            </label>
-            <label  class="cart__name">
-              Отчество:
-              <input class="cart__text" type="text" name="Отчество" placeholder="Отчество, если желаете">
-            </label>
+            <span class="cart__name">Имя:</span>
+            <input class="cart__text cart__text--name" type="text" name="Имя" placeholder="Введите ваше имя*" required>
+            <span class="cart__name">Фамилия:</span>
+            <input class="cart__text cart__text--surname" type="text" name="Фамилия" placeholder="Укажите фамилию*" required>
+            <span class="cart__name">Отчество:</span>
+            <input class="cart__text cart__text--surname" type="text" name="Отчество" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
       <div class="cart__container-tel">
