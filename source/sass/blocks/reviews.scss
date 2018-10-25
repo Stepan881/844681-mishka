@@ -1,6 +1,6 @@
 .reviews {
-  width: 82%;
-  padding: 0 9%;
+  width: 260px;
+  margin: 0 auto;
   margin-top: 58px;
   margin-bottom: 44px;
 }
@@ -127,7 +127,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
-    width: 100%;
+    width: 768px;
     min-height: 482px;
     display: flex;
     flex-wrap: wrap;

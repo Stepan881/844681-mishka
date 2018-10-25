@@ -29,24 +29,27 @@
 }
 
 .goods__head {
-  width: 82%;
-  padding: 74px 9% 0;
+  width: 260px;
+  text-align: center;
   font-size: 27px;
   line-height: 30px;
-  margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 48px;
   align-items: center;
   position: absolute;
   z-index: 1;
+  left: 50%;
+  margin-left: -130px;
 }
 
 .goods__list {
-  width: 100%;
+  width: 320px;
   position: absolute;
   bottom: -15px;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
+  left: 50%;
+  margin-left: -160px;
 }
 
 .goods__item {
@@ -160,17 +163,22 @@
   }
 
   .goods__head {
+    width: 500px;
+    margin-left: -250px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 152px;
+    padding-top: 116px;
   }
 
   .goods__list {
-    width: 87%;
+    width: 668px;
     height: 131px;
-    padding: 0 6.5%;
+    margin: 0;
+    padding: 0;
+    margin-left: -334px;
     position: absolute;
     display: flex;
+    bottom: 0;
   }
 
   .goods__item {
@@ -231,14 +239,17 @@
   .goods__head {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 152px;
+    padding-top: 109px;
+    width: 700px;
+    margin-left: -350px;
   }
 
   .goods__list {
     position: absolute;
     display: flex;
-    width: 87%;
-    bottom: -15px;
+    width: 1050px;
+    margin-left: -525px;
+    bottom: 0;
     justify-content: center;
   }
 

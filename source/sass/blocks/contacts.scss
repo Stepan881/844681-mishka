@@ -113,7 +113,7 @@
   text-decoration: none;
   color: $reviev-color;
   border: 2px solid $reviev-color;
-  width: 80%;
+  width: 260px;
   height: 48px;
   font-size: 18px;
   line-height: 20px;
@@ -134,8 +134,8 @@
 }
 
 .contacts__container {
-  width: 82%;
-  padding: 0 9%;
+  width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -150,8 +150,7 @@
   }
 
   .contacts__container {
-    width: 88%;
-    padding: 0 6%;
+    width: 676px;
   }
 
   .contacts__header {
@@ -205,7 +204,7 @@
   }
 
   .contacts__btn-write {
-    width: 29.5%;
+    width: 226px;
     margin-bottom: 0;
     margin-top: 55px;
   }

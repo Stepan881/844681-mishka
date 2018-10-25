@@ -1,11 +1,15 @@
 .baskets {
-  width: 82%;
-  padding: 0 9%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
 }
+
+.baskets__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
 
 .baskets__wrapper {
   width: 100%;
@@ -94,14 +98,18 @@
 
 @media (min-width: $tablet-width) {
   .baskets {
-    width: 88%;
-    padding: 0 6%;
+    width: 768px;
+    margin: 0 auto;
     position: relative;
     min-height: 580px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 16px;
+  }
+
+  .baskets__container {
+    width: 678px;
   }
 
   .baskets__container-header {
@@ -196,6 +204,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
+  }
+
+  .baskets__container {
+    width: 1050px;
   }
 
   .baskets__container-header {
