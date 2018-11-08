@@ -70,11 +70,15 @@ gulp.task("image", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img**/*.{jpg,svg}")
     .pipe(webp({quality: 50}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build"));
 });
 gulp.task("server", function () {
   server.init({
     server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
   gulp.watch("source/js/*.js", gulp.series("minjs", "refresh"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
@@ -99,5 +103,5 @@ gulp.task("refresh", function(done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "htmin", "minjs"));
+gulp.task("build", gulp.series("clean", "copy", "webp", "css", "sprite", "htmin", "minjs"));
 gulp.task("start", gulp.series("build", "server"));
